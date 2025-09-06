@@ -24991,3 +24991,49 @@ Success: true
 
 [2025-09-06 23:13:37] QUERY END
 ================================================================================
+
+[2025-09-06 23:22:00] QUERY START (Intelligent Routing)
+User Query: "### Aufgabe: Das elektrische Feld einer nicht-homogenen Ladungsverteilung
+
+Betrachten Sie eine isolierende Kugel mit dem Radius **R**. Im Inneren dieser Kugel befindet sich eine sphärische Ladungsverteilung, die jedoch **nicht gleichmäßig** ist. Die volumetrische Ladungsdichte ρ (Ladung pro Volumeneinheit) ist vom Abstand r zum Kugelmittelpunkt abhängig und folgt der Funktion:
+
+ρ(r)\={αr0​fu¨r 0≤r≤afu¨r a<r≤R​
+
+Dabei ist α eine positive Konstante und a ist ein Radius, für den gilt 0<a<R. Die Ladung existiert also nur in einer inneren Kugel mit Radius a.
+
+**Ihre Aufgabe:**
+
+Leiten Sie einen physikalisch und mathematisch fundierten Ausdruck für die Stärke des elektrischen Feldes E(r) als Funktion des Abstandes r vom Mittelpunkt her.
+
+Geben Sie die Lösung für zwei getrennte Bereiche an:
+
+1.  **Innerhalb** der Ladungsverteilung (0≤r≤a)
+    
+2.  **Außerhalb** der Ladungsverteilung, aber noch **innerhalb** der isolierenden Kugel (a<r≤R)
+    
+
+Ihre finale Antwort sollte nur von den Variablen r, a, α und der elektrischen Feldkonstante ε0​ abhängen.
+
+**Hinweis:** Das Gaußsche Gesetz der Elektrostatik ist hierfür der Schlüssel. Es lautet in seiner integralen Form:
+
+∮S​E![](data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="0.471em" height="0.714em" style="width:0.471em" viewBox="0 0 471 714" preserveAspectRatio="xMinYMin"><path d="M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5%0A3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11%0A10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63%0A-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1%0A-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59%0AH213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359%0Ac-16-25.333-24-45-24-59z"></path></svg>)⋅dA![](data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="0.471em" height="0.714em" style="width:0.471em" viewBox="0 0 471 714" preserveAspectRatio="xMinYMin"><path d="M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5%0A3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11%0A10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63%0A-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1%0A-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59%0AH213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359%0Ac-16-25.333-24-45-24-59z"></path></svg>)\=ε0​Qeingeschlossen​​
+
+Aufgrund der Kugelsymmetrie vereinfacht sich die linke Seite zu E(r)⋅4πr2. Ihre Hauptaufgabe ist es, die eingeschlossene Ladung Qeingeschlossen​ für die beiden Bereiche mittels Integration zu finden.
+
+* * *
+
+### Warum diese Aufgabe deutlich schwieriger ist:
+
+-   **Interdisziplinär:** Sie erfordert nicht nur reine Mathematik, sondern auch das Verständnis und die Anwendung eines fundamentalen physikalischen Gesetzes (Gaußsches Gesetz).
+    
+-   **Integralrechnung ist notwendig:** Im Gegensatz zur vorherigen Aufgabe, die "nur" Differentialrechnung erforderte, muss hier zur Bestimmung der eingeschlossenen Ladung ein Volumenintegral aufgestellt und gelöst werden. Die eingeschlossene Ladung Qeingeschlossen​ ist das Integral der Dichte ρ(r) über das Volumen einer Kugel mit Radius r.
+    
+-   **Stückweise definierte Funktion:** Das Problem ist in zwei Bereiche unterteilt. Das LLM muss erkennen, dass sich der Ansatz zur Berechnung der eingeschlossenen Ladung an der Grenze r\=a ändert.
+    
+    -   Für r≤a wächst die eingeschlossene Ladung mit r.
+        
+    -   Für r\>a ist die eingeschlossene Ladung konstant (die Gesamtladung), da keine weitere Ladung hinzukommt.
+        
+-   **Abstraktion und Einrichtung:** Das Problem ist weniger geradlinig. Ein LLM kann nicht einfach eine bekannte Formel anwenden, sondern muss die physikalische Situation modellieren, die richtige Integrationsgrenze wählen und die Ergebnisse kombinieren, um die endgültige, stückweise definierte Funktion für E(r) zu erhalten."
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True

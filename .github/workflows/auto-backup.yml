@@ -1,0 +1,105 @@
+name: 🚀 Auto Backup System
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    # Täglich um 2:00 UTC (3:00 MEZ)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      backup_type:
+        description: 'Backup Type'
+        required: true
+        default: 'manual'
+        type: choice
+        options:
+        - manual
+        - milestone
+        - emergency
+
+jobs:
+  auto-backup:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Komplette Historie für Tags
+        
+    - name: 🏷️ Create Auto Backup Tag
+      run: |
+        # Timestamp generieren
+        TIMESTAMP=$(date +%Y%m%d-%H%M%S)
+        
+        # Backup-Typ bestimmen
+        if [ "${{ github.event_name }}" = "schedule" ]; then
+          BACKUP_TYPE="scheduled"
+        elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          BACKUP_TYPE="${{ github.event.inputs.backup_type }}"
+        else
+          BACKUP_TYPE="auto"
+        fi
+        
+        TAG_NAME="auto-backup-${TIMESTAMP}-${BACKUP_TYPE}"
+        
+        # Git konfigurieren
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        
+        # Tag erstellen
+        git tag -a "$TAG_NAME" -m "Automated backup: $BACKUP_TYPE at $TIMESTAMP"
+        git push origin "$TAG_NAME"
+        
+        echo "Created backup tag: $TAG_NAME"
+        
+    - name: 📊 System Health Check
+      run: |
+        echo "🔍 Repository Health Check:"
+        echo "- Total files: $(find . -type f | wc -l)"
+        echo "- Python files: $(find . -name "*.py" | wc -l)"
+        echo "- Config files: $(find . -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.json" | wc -l)"
+        echo "- Last commit: $(git log -1 --pretty=format:'%h - %s (%cr)')"
+        echo "- Total commits: $(git rev-list --count HEAD)"
+        echo "- Branches: $(git branch -r | wc -l)"
+        echo "- Tags: $(git tag | wc -l)"
+        
+    - name: 📋 Generate Backup Report
+      run: |
+        cat > backup-report.md << EOF
+        # 🚀 Automated Backup Report
+        
+        **Datum**: $(date)
+        **Commit**: $(git rev-parse --short HEAD)
+        **Branch**: $(git branch --show-current)
+        **Trigger**: ${{ github.event_name }}
+        
+        ## 📊 Repository Stats:
+        - **Dateien gesamt**: $(find . -type f | wc -l)
+        - **Python Module**: $(find . -name "*.py" | wc -l)
+        - **Konfigurationsdateien**: $(find . -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.json" | wc -l)
+        - **Letzter Commit**: $(git log -1 --pretty=format:'%h - %s (%cr)')
+        - **Commits gesamt**: $(git rev-list --count HEAD)
+        - **Tags gesamt**: $(git tag | wc -l)
+        
+        ## 🏷️ Letzte Backup Tags:
+        $(git tag -l "*backup*" | tail -5 | sed 's/^/- /')
+        
+        ## 📁 Wichtige Verzeichnisse:
+        - **modules/**: $(find modules -name "*.py" 2>/dev/null | wc -l) Python-Dateien
+        - **tests/**: $(find tests -name "*.py" 2>/dev/null | wc -l) Test-Dateien  
+        - **scripts/**: $(find scripts -name "*" -type f 2>/dev/null | wc -l) Scripts
+        - **.kiro/**: $(find .kiro -name "*.md" 2>/dev/null | wc -l) Kiro-Dateien
+        
+        ---
+        *Automatisch generiert von GitHub Actions*
+        EOF
+        
+        echo "📋 Backup Report erstellt"
+        
+    - name: 🚨 Notify on Failure
+      if: failure()
+      run: |
+        echo "❌ Backup fehlgeschlagen!"
+        echo "Prüfe die Logs für Details."
