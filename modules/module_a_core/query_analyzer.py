@@ -174,7 +174,7 @@ class QueryAnalyzer:
     
     def _route_query_chatgpt(self, query: str, token_count: int, linux_kw: bool, code_kw: bool, complexity_score: float) -> str:
         """
-        ChatGPT's improved routing function with clear priorities.
+        OPTIMIZED routing function with enhanced mathematical detection.
         Returns MODEL_HEAVY, MODEL_CODE, or MODEL_FAST.
         """
         q = query
@@ -183,29 +183,68 @@ class QueryAnalyzer:
         # Reset debug info
         self.debug = {}
         
-        # 0) Fast zuerst
+        # 0) FAST MODEL - Basic commands (HIGHEST PRIORITY)
         for p in _FAST_PATS:
             if p.search(qn):
                 self.debug['route_reason'] = 'fast_basic_command'
                 return MODEL_FAST
         
-        if token_count < 5 and not (linux_kw or code_kw):
+        # Enhanced basic command detection
+        basic_command_patterns = [
+            r'welcher\s+befehl\s+(zeigt|macht|gibt|listet)',
+            r'was\s+macht\s+(der|das)\s+\w+\s+befehl',
+            r'welches\s+kommando\s+(zeigt|macht)',
+            r'wie\s+(liste|zeige)\s+ich.*\b(dateien|ordner|prozesse)\b',
+            r'^(ls|ll|pwd|cd|df|du|ps|top|htop|free|uname)(\s|$)',
+            r'^(cat|less|more|head|tail|grep|find|which)(\s|$)',
+        ]
+        
+        for pattern in basic_command_patterns:
+            if re.search(pattern, qn):
+                self.debug['route_reason'] = 'fast_basic_linux_command'
+                return MODEL_FAST
+        
+        # Don't route mathematical queries to FAST just because they're short
+        has_math_content = re.search(r"\b(berechne|fibonacci|gleichung|löse|mathematisch|optimal|x\s*[=+\-]|zahlen)\b", qn)
+        
+        if token_count < 5 and not (linux_kw or code_kw or has_math_content):
             self.debug['route_reason'] = 'fast_short'
             return MODEL_FAST
         
-        # Enhanced Mathematical Detection - PRIORITY CHECK
+        # 1) PROGRAMMING DETECTION - Check for programming context BEFORE math
+        programming_indicators = re.search(r"\b(implementiere|schreibe|erstelle|programmiere|python|javascript|java|c\+\+|rust|go|php|ruby|function|funktion|class|klasse|script|code|coding|entwickle)\b", qn)
+        
+        # Mathematical programming tasks should go to CODE model
+        if programming_indicators:
+            # Check if it's mathematical programming (CODE model)
+            math_programming = re.search(r"\b(fibonacci|primzahl|algorithmus|parser|berechnung|mathematisch).*\b(funktion|function|script|implementiere|programmiere|code)\b", qn) or \
+                              re.search(r"\b(implementiere|programmiere|schreibe).*\b(fibonacci|primzahl|algorithmus|parser|berechnung|mathematisch)\b", qn)
+            
+            if math_programming:
+                self.debug['route_reason'] = 'code_mathematical_programming'
+                return MODEL_CODE
+            
+            # General programming tasks
+            self.debug['route_reason'] = 'code_programming_task'
+            return MODEL_CODE
+        
+        # 2) PURE MATHEMATICAL PROBLEMS - Only for non-programming math
         math_indicators = re.search(r"\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|löse|mathematisch|optimal|fibonacci|gleichung|mathe|rechnen|werte\s+haben|ganze\s+zahlen)\b", qn)
         pure_math = re.search(r"(x\s*[\+\-\*\/=<>]|[\+\-\*\/=<>]\s*x|x\s+[\+\-]\s+y|gleichung|mathe|rechnen|bedingung\w*|erfüll\w*|zahlen.*x.*y.*z|x.*y.*=.*\d+)", qn)
         
-        # DEBUG: Log math detection
-        print(f"DEBUG: Math indicators: {bool(math_indicators)}, Pure math: {bool(pure_math)}, Complexity: {complexity_score}")
+        # System optimization with mathematical context (HEAVY model)
+        system_math_optimization = re.search(r"\b(puffergröße|blockgröße|cache|buffer|thread|worker|connection|pool|batch).*\b(optimal|mathematisch|berechne|bestimme)\b", qn) or \
+                                  re.search(r"\b(optimal|mathematisch|berechne|bestimme).*\b(puffergröße|blockgröße|cache|buffer|thread|worker|connection|pool|batch)\b", qn)
         
-        # Pure math problems get heavy model regardless of complexity
-        if pure_math or (math_indicators and complexity_score >= 0.4):
+        # Check for non-mathematical optimization (should go to CODE)
+        non_math_optimization = re.search(r"\b(optimiere|optimize).*\b(performance|datenbankperformance|database|web|api|code|system)\b", qn) and not system_math_optimization
+        
+        # Route to HEAVY model for pure mathematical problems or system optimization
+        if (pure_math or system_math_optimization or (math_indicators and complexity_score >= 0.4 and not programming_indicators)) and not non_math_optimization:
             self.debug['route_reason'] = 'heavy_math_detection_enhanced'
             self.debug['math_indicators'] = bool(math_indicators)
             self.debug['pure_math'] = bool(pure_math)
-            print(f"DEBUG: ROUTING TO HEAVY MODEL!")
+            self.debug['system_optimization'] = bool(system_math_optimization)
             return MODEL_HEAVY
         
         # 1) Scores berechnen
