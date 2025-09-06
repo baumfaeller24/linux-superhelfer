@@ -1,0 +1,618 @@
+{
+  "cycle": 209,
+  "accuracy": 50.0,
+  "cost_score": -3.3333333333333437,
+  "heavy_recall": 16.666666666666668,
+  "correct_routes": 15,
+  "total_queries": 30,
+  "cycle_time": 0.003128694021143019,
+  "routing_distribution": {
+    "fast": 12,
+    "code": 16,
+    "heavy": 2
+  },
+  "category_accuracy": {
+    "hard_negative": 0.0,
+    "code_tasks": 100.0,
+    "basic_commands": 42.857142857142854,
+    "intermediate": 75.0,
+    "mathematical": 100.0
+  },
+  "results": [
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets",
+      "category": "hard_negative",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757159935.8955584
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets",
+      "category": "hard_negative",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757159935.8955603
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets Danke im Voraus!",
+      "category": "hard_negative",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757159935.8955612
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets",
+      "category": "hard_negative",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757159935.8955617
+    },
+    {
+      "query": "Kannst du mir helfen: bestimme die mathematisch beste partitionierung f\u00fcr gro\u00dfe datasets",
+      "category": "hard_negative",
+      "expected": "heavy",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.16666666666666666,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.16666666666666666
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8955626
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets Danke im Voraus!",
+      "category": "hard_negative",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757159935.8955636
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets",
+      "category": "hard_negative",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757159935.8955643
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets",
+      "category": "hard_negative",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757159935.895565
+    },
+    {
+      "query": "Kannst du mir helfen: bestimme die mathematisch beste partitionierung f\u00fcr gro\u00dfe datasets",
+      "category": "hard_negative",
+      "expected": "heavy",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.16666666666666666,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.16666666666666666
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8955657
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets",
+      "category": "hard_negative",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757159935.8955662
+    },
+    {
+      "query": "Schreibe ein Bash-Skript zum automatischen Backup",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.3333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: bash; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8955936
+    },
+    {
+      "query": "Welches Kommando listet alle Dateien auf? Danke im Voraus!",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: kommando; Code keywords: list; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.895596
+    },
+    {
+      "query": "Kannst du mir helfen: welcher befehl zeigt die festplattenbelegung an?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Fast model selected: fast_basic_command (Linux keywords: befehl, du)",
+      "debug_info": {
+        "route_reason": "fast_basic_command"
+      },
+      "timestamp": 1757159935.8955972
+    },
+    {
+      "query": "Wie optimiere ich die Netzwerk-Performance unter Linux?",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: rm; Code keywords: for; Complexity indicators: optimiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.5
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8955991
+    },
+    {
+      "query": "Welches Kommando listet alle Dateien auf??",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: kommando; Code keywords: list; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8955998
+    },
+    {
+      "query": "Erstelle eine Python-Funktion f\u00fcr Datei-Synchronisation?",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: funktion, python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.895602
+    },
+    {
+      "query": "Kannst du mir helfen: erkl\u00e4re die funktionsweise von systemd services",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: service, du, systemd; Code keywords: funktion; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8956034
+    },
+    {
+      "query": "Kannst du mir helfen: vergleiche verschiedene load-balancing-strategien",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.3857142857142857,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Complexity indicators: vergleiche; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3857142857142857
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8956044
+    },
+    {
+      "query": "Bestimme die mathematisch optimale Puffergr\u00f6\u00dfe f\u00fcr I/O-Operationen",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Heavy model selected: heavy_win_relaxed H:3.5 T:1.0 (Scores - Heavy: 3.5, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\bmathematisch\\w*\\b.{0,40}\\boptimal\\w*\\b",
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b",
+          "\\b(puffer(?:gr\u00f6|gro)ss?e|block(?:gr\u00f6|gro)ss?e)\\b.{0,40}\\b(operation\\w*|i/?o)\\b"
+        ],
+        "tech_hits": [
+          "\\b(i/?o|io)[\\s/\\-\u2013\u2014]*operation\\w*"
+        ],
+        "scores": {
+          "heavy": 3.5,
+          "tech": 1.0,
+          "complexity": 0.5
+        },
+        "route_reason": "heavy_win_relaxed H:3.5 T:1.0"
+      },
+      "timestamp": 1757159935.895606
+    },
+    {
+      "query": "Erstelle ein Python-Tool f\u00fcr Netzwerk-Monitoring?",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8956075
+    },
+    {
+      "query": "Bestimme die mathematisch optimale Cache-Gr\u00f6\u00dfe f\u00fcr Datenbank-Queries?",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Heavy model selected: heavy_win_relaxed H:2.5 T:0.0 (Scores - Heavy: 2.5, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\bmathematisch\\w*\\b.{0,40}\\boptimal\\w*\\b",
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 2.5,
+          "tech": 0.0,
+          "complexity": 0.5
+        },
+        "route_reason": "heavy_win_relaxed H:2.5 T:0.0"
+      },
+      "timestamp": 1757159935.8956091
+    },
+    {
+      "query": "Was macht der df Befehl??",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: befehl, df; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8956103
+    },
+    {
+      "query": "Welcher Befehl zeigt die Festplattenbelegung an? Danke im Voraus!",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.2222222222222222,
+      "reasoning": "Fast model selected: fast_basic_command (Linux keywords: befehl)",
+      "debug_info": {
+        "route_reason": "fast_basic_command"
+      },
+      "timestamp": 1757159935.8956113
+    },
+    {
+      "query": "Was sind Best Practices f\u00fcr Linux-Security-Hardening bitte?",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757159935.8956134
+    },
+    {
+      "query": "Welches Kommando listet alle Dateien auf?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: kommando; Code keywords: list; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8956146
+    },
+    {
+      "query": "Schreibe ein Python-Skript f\u00fcr Performance-Monitoring Danke im Voraus!",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: rm; Code keywords: python, for; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8956158
+    },
+    {
+      "query": "Programmiere einen Cron-Job f\u00fcr automatische Wartung",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cron; Code keywords: programmiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8956168
+    },
+    {
+      "query": "Schreibe ein Bash-Skript f\u00fcr System-Updates",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: bash; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8956182
+    },
+    {
+      "query": "Wie kann ich die Festplattenbelegung pr\u00fcfen?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757159935.8956196
+    },
+    {
+      "query": "Erstelle ein Python-Tool f\u00fcr Netzwerk-Monitoring?",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757159935.8956206
+    }
+  ]
+}

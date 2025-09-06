@@ -1,0 +1,1993 @@
+{
+  "cycle": 474,
+  "accuracy": 66.0,
+  "correct_routes": 66,
+  "total_queries": 100,
+  "cycle_time": 0.0051326751708984375,
+  "routing_distribution": {
+    "fast": 24,
+    "code": 66,
+    "heavy": 10
+  },
+  "category_accuracy": {
+    "code_tasks": 100.0,
+    "basic_commands": 46.15384615384615,
+    "mathematical": 41.66666666666667,
+    "intermediate": 70.0
+  },
+  "results": [
+    {
+      "query": "Entwickle ein Shell-Skript f\u00fcr Log-Rotation Danke im Voraus!",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: shell, log; Code keywords: entwickle; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788098
+    },
+    {
+      "query": "Was ist der Unterschied zwischen ls und ll??",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.1,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.1
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.4788136
+    },
+    {
+      "query": "Programmiere einen Cron-Job f\u00fcr automatische Wartung?",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cron; Code keywords: programmiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478816
+    },
+    {
+      "query": "Schreibe ein Python-Skript f\u00fcr Performance-Monitoring Danke im Voraus!",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: rm; Code keywords: python, for; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788177
+    },
+    {
+      "query": "Erstelle ein Python-Tool f\u00fcr Netzwerk-Monitoring",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788196
+    },
+    {
+      "query": "Entwickle ein Shell-Skript f\u00fcr Datenbank-Backup",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: shell; Code keywords: entwickle; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788215
+    },
+    {
+      "query": "Welcher Befehl zeigt die Systemzeit an bitte?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.2857142857142857,
+      "reasoning": "Fast model selected: fast_basic_command (Linux keywords: befehl)",
+      "debug_info": {
+        "route_reason": "fast_basic_command"
+      },
+      "timestamp": 1757122052.478823
+    },
+    {
+      "query": "Finde die mathematisch optimale Batch-Gr\u00f6\u00dfe f\u00fcr Datenverarbeitung",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 0.7857142857142857,
+      "reasoning": "Heavy model selected: heavy_win H:2.5 T:1.0 (Linux keywords: find; Scores - Heavy: 2.5, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\bmathematisch\\w*\\b.{0,40}\\boptimal\\w*\\b",
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 2.5,
+          "tech": 1.0,
+          "complexity": 0.7857142857142857
+        },
+        "route_reason": "heavy_win H:2.5 T:1.0"
+      },
+      "timestamp": 1757122052.4788253
+    },
+    {
+      "query": "Kannst du mir helfen: schreibe ein bash-skript zum automatischen backup",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: bash, du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478827
+    },
+    {
+      "query": "Welcher Befehl zeigt den verf\u00fcgbaren Speicher? Danke im Voraus!",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.2222222222222222,
+      "reasoning": "Fast model selected: fast_basic_command (Linux keywords: befehl)",
+      "debug_info": {
+        "route_reason": "fast_basic_command"
+      },
+      "timestamp": 1757122052.4788291
+    },
+    {
+      "query": "Erkl\u00e4re mir die Unterschiede zwischen verschiedenen Dateisystemen Danke im Voraus!",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.4788308
+    },
+    {
+      "query": "Entwickle ein Shell-Skript f\u00fcr Datenbank-Backup?",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: shell; Code keywords: entwickle; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788322
+    },
+    {
+      "query": "Vergleiche verschiedene Load-Balancing-Strategien",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.1,
+      "reasoning": "Fast model selected: fast_short (Complexity indicators: vergleiche)",
+      "debug_info": {
+        "route_reason": "fast_short"
+      },
+      "timestamp": 1757122052.4788332
+    },
+    {
+      "query": "Programmiere einen Cron-Job f\u00fcr automatische Wartung",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cron; Code keywords: programmiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788346
+    },
+    {
+      "query": "Kannst du mir helfen: wie kann ich alle laufenden prozesse anzeigen?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.36363636363636365,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du, ss; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.36363636363636365
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788365
+    },
+    {
+      "query": "Schreibe ein Python-Skript f\u00fcr Performance-Monitoring",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: rm; Code keywords: python, for; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788377
+    },
+    {
+      "query": "Schreibe ein Bash-Skript zum automatischen Backup",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.3333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: bash; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788387
+    },
+    {
+      "query": "Welcher Befehl zeigt den verf\u00fcgbaren Speicher bitte?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.2857142857142857,
+      "reasoning": "Fast model selected: fast_basic_command (Linux keywords: befehl)",
+      "debug_info": {
+        "route_reason": "fast_basic_command"
+      },
+      "timestamp": 1757122052.4788404
+    },
+    {
+      "query": "Vergleiche verschiedene Load-Balancing-Strategien",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.1,
+      "reasoning": "Fast model selected: fast_short (Complexity indicators: vergleiche)",
+      "debug_info": {
+        "route_reason": "fast_short"
+      },
+      "timestamp": 1757122052.4788413
+    },
+    {
+      "query": "Analysiere die Ursachen f\u00fcr Memory-Leaks in Anwendungen",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.3857142857142857,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Complexity indicators: analysiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3857142857142857
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478843
+    },
+    {
+      "query": "Vergleiche verschiedene Load-Balancing-Strategien",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.1,
+      "reasoning": "Fast model selected: fast_short (Complexity indicators: vergleiche)",
+      "debug_info": {
+        "route_reason": "fast_short"
+      },
+      "timestamp": 1757122052.478844
+    },
+    {
+      "query": "Schreibe ein Python-Skript f\u00fcr Performance-Monitoring",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: rm; Code keywords: python, for; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478845
+    },
+    {
+      "query": "Entwickle ein Shell-Skript f\u00fcr Log-Rotation Danke im Voraus!",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: shell, log; Code keywords: entwickle; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788465
+    },
+    {
+      "query": "Finde die mathematisch optimale Batch-Gr\u00f6\u00dfe f\u00fcr Datenverarbeitung",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 0.7857142857142857,
+      "reasoning": "Heavy model selected: heavy_win H:2.5 T:1.0 (Linux keywords: find; Scores - Heavy: 2.5, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\bmathematisch\\w*\\b.{0,40}\\boptimal\\w*\\b",
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 2.5,
+          "tech": 1.0,
+          "complexity": 0.7857142857142857
+        },
+        "route_reason": "heavy_win H:2.5 T:1.0"
+      },
+      "timestamp": 1757122052.4788477
+    },
+    {
+      "query": "Kannst du mir helfen: wie kann ich alle laufenden prozesse anzeigen?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.36363636363636365,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du, ss; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.36363636363636365
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788487
+    },
+    {
+      "query": "Programmiere einen Service-Monitor in Python",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: service; Code keywords: programmiere, python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788508
+    },
+    {
+      "query": "Erstelle ein Bash-Tool f\u00fcr User-Management?",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: bash, gem; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788523
+    },
+    {
+      "query": "Kannst du mir helfen: bestimme die mathematisch beste partitionierung f\u00fcr gro\u00dfe datasets",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.16666666666666666,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.16666666666666666
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478854
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets Danke im Voraus!",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.478856
+    },
+    {
+      "query": "Kannst du mir helfen: l\u00f6se das gleichungssystem: x+y=10, x-y=2",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 1.0,
+      "reasoning": "Heavy model selected: heavy_win H:3.0 T:1.0 (Linux keywords: du, ss; Complexity indicators: l\u00f6se; Scores - Heavy: 3.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b.{0,40}\\b(gleichung\\w*|system)\\b",
+          "\\bgleichungssystem\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 3.0,
+          "tech": 1.0,
+          "complexity": 1.0
+        },
+        "route_reason": "heavy_win H:3.0 T:1.0"
+      },
+      "timestamp": 1757122052.4788585
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.4788604
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.4788625
+    },
+    {
+      "query": "Berechne Fibonacci-Zahlen zur Bestimmung von Retry-Intervallen?",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.9333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: try; Complexity indicators: berechne, rechne; Scores - Heavy: 1.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 1.0,
+          "tech": 1.0,
+          "complexity": 0.9333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788642
+    },
+    {
+      "query": "Kannst du mir helfen: wie kann ich die festplattenbelegung pr\u00fcfen?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.2,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478866
+    },
+    {
+      "query": "Wie kann ich alle laufenden Prozesse anzeigen??",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.2857142857142857,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: ss; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2857142857142857
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788675
+    },
+    {
+      "query": "Was ist der Unterschied zwischen ls und ll bitte?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.1,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.1
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.478879
+    },
+    {
+      "query": "Erstelle ein Bash-Tool f\u00fcr User-Management Danke im Voraus!",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: bash, gem; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788802
+    },
+    {
+      "query": "Wie kann ich alle laufenden Prozesse anzeigen bitte?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.25,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: ss; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.25
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788816
+    },
+    {
+      "query": "Analysiere die Performance-Probleme bei hoher CPU-Last",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cp, rm; Code keywords: for; Complexity indicators: analysiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.5
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478883
+    },
+    {
+      "query": "Bestimme die mathematisch optimale Puffergr\u00f6\u00dfe f\u00fcr I/O-Operationen",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Heavy model selected: heavy_win H:3.5 T:1.0 (Scores - Heavy: 3.5, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\bmathematisch\\w*\\b.{0,40}\\boptimal\\w*\\b",
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b",
+          "\\b(puffer(?:gr\u00f6|gro)ss?e|block(?:gr\u00f6|gro)ss?e)\\b.{0,40}\\b(operation\\w*|i/?o)\\b"
+        ],
+        "tech_hits": [
+          "\\b(i/?o|io)[\\s/\\-\u2013\u2014]*operation\\w*"
+        ],
+        "scores": {
+          "heavy": 3.5,
+          "tech": 1.0,
+          "complexity": 0.5
+        },
+        "route_reason": "heavy_win H:3.5 T:1.0"
+      },
+      "timestamp": 1757122052.478885
+    },
+    {
+      "query": "Erstelle ein Python-Tool f\u00fcr Netzwerk-Monitoring",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788861
+    },
+    {
+      "query": "Wie funktioniert die Speicherverwaltung in Linux?",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.3333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: funktion; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4788878
+    },
+    {
+      "query": "Was sind die Vor- und Nachteile von Docker vs. LXC?",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.2,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: docker; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789062
+    },
+    {
+      "query": "Kannst du mir helfen: wie kann ich die netzwerkverbindungen anzeigen?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.2,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789143
+    },
+    {
+      "query": "Was sind Best Practices f\u00fcr Linux-Security-Hardening??",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.478918
+    },
+    {
+      "query": "Kannst du mir helfen: analysiere die performance-probleme bei hoher cpu-last",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du, cp, rm; Code keywords: for; Complexity indicators: analysiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.5
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789197
+    },
+    {
+      "query": "Programmiere einen Cron-Job f\u00fcr automatische Wartung?",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cron; Code keywords: programmiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789214
+    },
+    {
+      "query": "Bestimme die mathematisch optimale Cache-Gr\u00f6\u00dfe f\u00fcr Datenbank-Queries Danke im Voraus!",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Heavy model selected: heavy_win H:2.5 T:0.0 (Scores - Heavy: 2.5, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\bmathematisch\\w*\\b.{0,40}\\boptimal\\w*\\b",
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 2.5,
+          "tech": 0.0,
+          "complexity": 0.5
+        },
+        "route_reason": "heavy_win H:2.5 T:0.0"
+      },
+      "timestamp": 1757122052.4789236
+    },
+    {
+      "query": "Entwickle ein Shell-Skript f\u00fcr Log-Rotation",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: shell, log; Code keywords: entwickle; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478925
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.478927
+    },
+    {
+      "query": "Kannst du mir helfen: berechne die optimale anzahl von connections im connection pool",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.35384615384615387,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Complexity indicators: berechne, rechne; Scores - Heavy: 1.5, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 1.5,
+          "tech": 1.0,
+          "complexity": 0.35384615384615387
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478928
+    },
+    {
+      "query": "Wie kann ich die Festplattenbelegung pr\u00fcfen??",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.4789295
+    },
+    {
+      "query": "Was sind Best Practices f\u00fcr Linux-Security-Hardening bitte?",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.478931
+    },
+    {
+      "query": "Kannst du mir helfen: welcher befehl zeigt den verf\u00fcgbaren speicher?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Fast model selected: fast_basic_command (Linux keywords: befehl, du)",
+      "debug_info": {
+        "route_reason": "fast_basic_command"
+      },
+      "timestamp": 1757122052.4789324
+    },
+    {
+      "query": "Wie optimiere ich die Netzwerk-Performance unter Linux? Danke im Voraus!",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: rm; Code keywords: for; Complexity indicators: optimiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.5
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478934
+    },
+    {
+      "query": "Schreibe ein Bash-Skript zum automatischen Backup Danke im Voraus!",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.2222222222222222,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: bash; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2222222222222222
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789352
+    },
+    {
+      "query": "Wie kann ich die Netzwerkverbindungen anzeigen? Danke im Voraus!",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.2222222222222222,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2222222222222222
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789364
+    },
+    {
+      "query": "Wie kann ich alle laufenden Prozesse anzeigen??",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.2857142857142857,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: ss; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2857142857142857
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789376
+    },
+    {
+      "query": "Bestimme die mathematisch optimale Puffergr\u00f6\u00dfe f\u00fcr I/O-Operationen",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Heavy model selected: heavy_win H:3.5 T:1.0 (Scores - Heavy: 3.5, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\bmathematisch\\w*\\b.{0,40}\\boptimal\\w*\\b",
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b",
+          "\\b(puffer(?:gr\u00f6|gro)ss?e|block(?:gr\u00f6|gro)ss?e)\\b.{0,40}\\b(operation\\w*|i/?o)\\b"
+        ],
+        "tech_hits": [
+          "\\b(i/?o|io)[\\s/\\-\u2013\u2014]*operation\\w*"
+        ],
+        "scores": {
+          "heavy": 3.5,
+          "tech": 1.0,
+          "complexity": 0.5
+        },
+        "route_reason": "heavy_win H:3.5 T:1.0"
+      },
+      "timestamp": 1757122052.478939
+    },
+    {
+      "query": "Schreibe ein Python-Skript f\u00fcr Performance-Monitoring Danke im Voraus!",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: rm; Code keywords: python, for; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789405
+    },
+    {
+      "query": "Kannst du mir helfen: welcher befehl zeigt die festplattenbelegung an?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Fast model selected: fast_basic_command (Linux keywords: befehl, du)",
+      "debug_info": {
+        "route_reason": "fast_basic_command"
+      },
+      "timestamp": 1757122052.4789417
+    },
+    {
+      "query": "L\u00f6se die Optimierungsaufgabe f\u00fcr Memory-Allocation",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.6,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cat; Complexity indicators: l\u00f6se; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.6
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789433
+    },
+    {
+      "query": "Erstelle ein Bash-Tool f\u00fcr User-Management",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: bash, gem; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789445
+    },
+    {
+      "query": "Erstelle ein Bash-Tool f\u00fcr User-Management",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: bash, gem; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478946
+    },
+    {
+      "query": "Kannst du mir helfen: programmiere einen service-monitor in python",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: service, du; Code keywords: programmiere, python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789472
+    },
+    {
+      "query": "Kannst du mir helfen: was macht der df befehl?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: befehl, df, du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789488
+    },
+    {
+      "query": "Was ist der Unterschied zwischen ls und ll? Danke im Voraus!",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.1,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.1
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.4789503
+    },
+    {
+      "query": "Programmiere einen Cron-Job f\u00fcr automatische Wartung",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cron; Code keywords: programmiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789512
+    },
+    {
+      "query": "Was ist der Unterschied zwischen ls und ll bitte?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.1,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.1
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.4789526
+    },
+    {
+      "query": "Wie funktioniert die Speicherverwaltung in Linux??",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.3333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: funktion; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789538
+    },
+    {
+      "query": "Kannst du mir helfen: entwickle ein shell-skript f\u00fcr datenbank-backup",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: shell, du; Code keywords: entwickle; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478955
+    },
+    {
+      "query": "Kannst du mir helfen: entwickle ein shell-skript f\u00fcr datenbank-backup",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: shell, du; Code keywords: entwickle; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789565
+    },
+    {
+      "query": "Erkl\u00e4re die Unterschiede zwischen verschiedenen Schedulern",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.3333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789581
+    },
+    {
+      "query": "Bestimme die mathematisch beste Partitionierung f\u00fcr gro\u00dfe Datasets",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.0,
+      "reasoning": "Fast model selected: fast_default (Scores - Heavy: 0.0, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 0.0,
+          "complexity": 0.0
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.4789596
+    },
+    {
+      "query": "Kannst du mir helfen: wie kann ich die netzwerkverbindungen anzeigen?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.2,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789608
+    },
+    {
+      "query": "Erkl\u00e4re die Unterschiede zwischen verschiedenen Schedulern?",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.3333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789624
+    },
+    {
+      "query": "L\u00f6se die Optimierungsaufgabe f\u00fcr Memory-Allocation",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.6,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cat; Complexity indicators: l\u00f6se; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.6
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789636
+    },
+    {
+      "query": "Kannst du mir helfen: erkl\u00e4re mir die unterschiede zwischen verschiedenen dateisystemen",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.18181818181818182,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.18181818181818182
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789658
+    },
+    {
+      "query": "Wie zeige ich die CPU-Auslastung an??",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.3333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cp; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478967
+    },
+    {
+      "query": "Wie kann ich die Netzwerkverbindungen anzeigen??",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.3333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789681
+    },
+    {
+      "query": "Kannst du mir helfen: erkl\u00e4re mir die unterschiede zwischen verschiedenen dateisystemen",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.18181818181818182,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.18181818181818182
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789693
+    },
+    {
+      "query": "Entwickle ein Shell-Skript f\u00fcr Log-Rotation",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: shell, log; Code keywords: entwickle; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789705
+    },
+    {
+      "query": "Kannst du mir helfen: finde die mathematisch optimale batch-gr\u00f6\u00dfe f\u00fcr datenverarbeitung",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 0.8636363636363636,
+      "reasoning": "Heavy model selected: heavy_win H:3.5 T:1.0 (Linux keywords: find, du; Scores - Heavy: 3.5, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\bmathematisch\\w*\\b.{0,40}\\boptimal\\w*\\b",
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 3.5,
+          "tech": 1.0,
+          "complexity": 0.8636363636363636
+        },
+        "route_reason": "heavy_win H:3.5 T:1.0"
+      },
+      "timestamp": 1757122052.4789727
+    },
+    {
+      "query": "Kannst du mir helfen: berechne die optimale timeout-werte f\u00fcr http-requests",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.5,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Complexity indicators: berechne, rechne; Scores - Heavy: 1.5, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 1.5,
+          "tech": 1.0,
+          "complexity": 0.5
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789739
+    },
+    {
+      "query": "Erstelle ein Python-Tool f\u00fcr Netzwerk-Monitoring",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789755
+    },
+    {
+      "query": "Wie kann ich die Netzwerkverbindungen anzeigen?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.3333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789762
+    },
+    {
+      "query": "Schreibe ein Python-Skript f\u00fcr Performance-Monitoring",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: rm; Code keywords: python, for; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789774
+    },
+    {
+      "query": "Finde die optimale Anzahl von Worker-Threads f\u00fcr CPU-intensive Tasks",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.5,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: find, cp; Scores - Heavy: 1.5, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 1.5,
+          "tech": 1.0,
+          "complexity": 0.5
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789796
+    },
+    {
+      "query": "Entwickle ein Shell-Skript f\u00fcr Datenbank-Backup",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: shell; Code keywords: entwickle; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789805
+    },
+    {
+      "query": "Wie optimiere ich die Netzwerk-Performance unter Linux bitte?",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: rm; Code keywords: for; Complexity indicators: optimiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.5
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478982
+    },
+    {
+      "query": "Bestimme die mathematisch optimale Cache-Gr\u00f6\u00dfe f\u00fcr Datenbank-Queries Danke im Voraus!",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Heavy model selected: heavy_win H:2.5 T:0.0 (Scores - Heavy: 2.5, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\bmathematisch\\w*\\b.{0,40}\\boptimal\\w*\\b",
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 2.5,
+          "tech": 0.0,
+          "complexity": 0.5
+        },
+        "route_reason": "heavy_win H:2.5 T:0.0"
+      },
+      "timestamp": 1757122052.4789832
+    },
+    {
+      "query": "Analysiere die Performance-Probleme bei hoher CPU-Last",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cp, rm; Code keywords: for; Complexity indicators: analysiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.5
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478984
+    },
+    {
+      "query": "Berechne die optimale Anzahl von Connections im Connection Pool?",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "fast",
+      "correct": false,
+      "complexity": 0.2,
+      "reasoning": "Fast model selected: fast_default (Complexity indicators: berechne, rechne; Scores - Heavy: 1.5, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 1.5,
+          "tech": 0.0,
+          "complexity": 0.2
+        },
+        "route_reason": "fast_default"
+      },
+      "timestamp": 1757122052.4789853
+    },
+    {
+      "query": "Kannst du mir helfen: welcher befehl zeigt die systemzeit an?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Fast model selected: fast_basic_command (Linux keywords: befehl, du)",
+      "debug_info": {
+        "route_reason": "fast_basic_command"
+      },
+      "timestamp": 1757122052.4789867
+    },
+    {
+      "query": "L\u00f6se das Gleichungssystem: x+y=10, x-y=2",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 1.0,
+      "reasoning": "Heavy model selected: heavy_win H:2.0 T:1.0 (Linux keywords: ss; Complexity indicators: l\u00f6se; Scores - Heavy: 2.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\bgleichungssystem\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 2.0,
+          "tech": 1.0,
+          "complexity": 1.0
+        },
+        "route_reason": "heavy_win H:2.0 T:1.0"
+      },
+      "timestamp": 1757122052.478988
+    },
+    {
+      "query": "Wie kann ich alle laufenden Prozesse anzeigen??",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.2857142857142857,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: ss; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2857142857142857
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789891
+    },
+    {
+      "query": "Bestimme die mathematisch optimale Cache-Gr\u00f6\u00dfe f\u00fcr Datenbank-Queries",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 0.5,
+      "reasoning": "Heavy model selected: heavy_win H:2.5 T:0.0 (Scores - Heavy: 2.5, Tech: 0.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\bmathematisch\\w*\\b.{0,40}\\boptimal\\w*\\b",
+          "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 2.5,
+          "tech": 0.0,
+          "complexity": 0.5
+        },
+        "route_reason": "heavy_win H:2.5 T:0.0"
+      },
+      "timestamp": 1757122052.4789903
+    },
+    {
+      "query": "Welcher Befehl zeigt die Systemzeit an?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.3333333333333333,
+      "reasoning": "Fast model selected: fast_basic_command (Linux keywords: befehl)",
+      "debug_info": {
+        "route_reason": "fast_basic_command"
+      },
+      "timestamp": 1757122052.4789913
+    },
+    {
+      "query": "Kannst du mir helfen: was sind die vor- und nachteile von docker vs. lxc?",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.2857142857142857,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du, docker; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2857142857142857
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.4789927
+    },
+    {
+      "query": "Berechne Fibonacci-Zahlen zur Bestimmung von Retry-Intervallen",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.9333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: try; Complexity indicators: berechne, rechne; Scores - Heavy: 1.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 1.0,
+          "tech": 1.0,
+          "complexity": 0.9333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757122052.478994
+    }
+  ]
+}

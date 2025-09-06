@@ -1,0 +1,403 @@
+{
+  "cycle": 99,
+  "accuracy": 80.0,
+  "cost_score": 82.5,
+  "heavy_recall": 50.0,
+  "correct_routes": 16,
+  "total_queries": 20,
+  "cycle_time": 0.011137530964333564,
+  "routing_distribution": {
+    "fast": 2,
+    "code": 17,
+    "heavy": 1
+  },
+  "category_accuracy": {
+    "code_tasks": 100.0,
+    "mathematical": 50.0,
+    "intermediate": 100.0,
+    "basic_commands": 40.0
+  },
+  "results": [
+    {
+      "query": "Programmiere einen Cron-Job f\u00fcr automatische Wartung?",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cron; Code keywords: programmiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.0516958
+    },
+    {
+      "query": "Finde die mathematisch optimale Batch-Gr\u00f6\u00dfe f\u00fcr Datenverarbeitung?",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "heavy",
+      "correct": true,
+      "complexity": 0.7857142857142857,
+      "reasoning": "Heavy model selected: heavy_math_detection (Linux keywords: find)",
+      "debug_info": {
+        "route_reason": "heavy_math_detection"
+      },
+      "timestamp": 1757166759.0517
+    },
+    {
+      "query": "Wie funktioniert die Speicherverwaltung in Linux bitte?",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.2857142857142857,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: funktion; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2857142857142857
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.051703
+    },
+    {
+      "query": "Entwickle ein Shell-Skript f\u00fcr Log-Rotation Danke im Voraus!",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: shell, log; Code keywords: entwickle; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.051705
+    },
+    {
+      "query": "Programmiere einen Service-Monitor in Python",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: service; Code keywords: programmiere, python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.0517063
+    },
+    {
+      "query": "Was sind die Vor- und Nachteile von Docker vs. LXC??",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.2,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: docker; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.051708
+    },
+    {
+      "query": "Erkl\u00e4re die Unterschiede zwischen verschiedenen Schedulern Danke im Voraus!",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.2222222222222222,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2222222222222222
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.05171
+    },
+    {
+      "query": "Kannst du mir helfen: analysiere die ursachen f\u00fcr memory-leaks in anwendungen",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.28181818181818186,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Complexity indicators: analysiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.28181818181818186
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.0517118
+    },
+    {
+      "query": "Erstelle ein Python-Tool f\u00fcr Netzwerk-Monitoring?",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.0517132
+    },
+    {
+      "query": "Kannst du mir helfen: l\u00f6se die optimierungsaufgabe f\u00fcr memory-allocation",
+      "category": "mathematical",
+      "expected": "heavy",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.6,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du, cat; Complexity indicators: l\u00f6se; Scores - Heavy: 1.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [
+          "\\boptimierungsaufgabe\\b"
+        ],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 1.0,
+          "tech": 1.0,
+          "complexity": 0.6
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.0517154
+    },
+    {
+      "query": "Programmiere einen Service-Monitor in Python",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: service; Code keywords: programmiere, python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.0517166
+    },
+    {
+      "query": "Analysiere die Ursachen f\u00fcr Memory-Leaks in Anwendungen",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.3857142857142857,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Complexity indicators: analysiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3857142857142857
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.051718
+    },
+    {
+      "query": "Wie kann ich alle laufenden Prozesse anzeigen??",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.2857142857142857,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: ss; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2857142857142857
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.0517194
+    },
+    {
+      "query": "Programmiere einen Cron-Job f\u00fcr automatische Wartung",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: cron; Code keywords: programmiere; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.0517209
+    },
+    {
+      "query": "Wie funktioniert die Speicherverwaltung in Linux??",
+      "category": "intermediate",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.3333333333333333,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: funktion; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.3333333333333333
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.0517223
+    },
+    {
+      "query": "Wie kann ich die Netzwerkverbindungen anzeigen bitte?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.2857142857142857,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.2857142857142857
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.0517242
+    },
+    {
+      "query": "Erstelle eine Python-Funktion f\u00fcr Datei-Synchronisation Danke im Voraus!",
+      "category": "code_tasks",
+      "expected": "code",
+      "actual": "code",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: funktion, python; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.0517256
+    },
+    {
+      "query": "Kannst du mir helfen: welcher befehl zeigt die festplattenbelegung an?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.4,
+      "reasoning": "Fast model selected: fast_basic_command (Linux keywords: befehl, du)",
+      "debug_info": {
+        "route_reason": "fast_basic_command"
+      },
+      "timestamp": 1757166759.051727
+    },
+    {
+      "query": "Welches Kommando listet alle Dateien auf??",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "code",
+      "correct": false,
+      "complexity": 0.4,
+      "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: kommando; Code keywords: list; Scores - Heavy: 0.0, Tech: 1.0)",
+      "debug_info": {
+        "heavy_hits": [],
+        "tech_hits": [],
+        "scores": {
+          "heavy": 0.0,
+          "tech": 1.0,
+          "complexity": 0.4
+        },
+        "route_reason": "code_tech T:1.0"
+      },
+      "timestamp": 1757166759.051728
+    },
+    {
+      "query": "Welcher Befehl zeigt die Festplattenbelegung an bitte?",
+      "category": "basic_commands",
+      "expected": "fast",
+      "actual": "fast",
+      "correct": true,
+      "complexity": 0.2857142857142857,
+      "reasoning": "Fast model selected: fast_basic_command (Linux keywords: befehl)",
+      "debug_info": {
+        "route_reason": "fast_basic_command"
+      },
+      "timestamp": 1757166759.0517294
+    }
+  ]
+}

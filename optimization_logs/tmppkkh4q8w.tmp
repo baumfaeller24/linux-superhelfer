@@ -1,0 +1,244 @@
+{
+  "cycle": 1,
+  "timestamp": 1757106661.4577794,
+  "metrics": {
+    "accuracy": 62.0,
+    "cost_score": 87.33333333333333,
+    "heavy_recall": 56.00000000000001,
+    "class_metrics": {
+      "fast": {
+        "precision": 61.53846153846154,
+        "recall": 26.666666666666668,
+        "expected_count": 30,
+        "actual_count": 13,
+        "correct_count": 8
+      },
+      "code": {
+        "precision": 54.794520547945204,
+        "recall": 88.88888888888889,
+        "expected_count": 45,
+        "actual_count": 73,
+        "correct_count": 40
+      },
+      "heavy": {
+        "precision": 100.0,
+        "recall": 56.00000000000001,
+        "expected_count": 25,
+        "actual_count": 14,
+        "correct_count": 14
+      }
+    },
+    "top_misrouted": [
+      {
+        "query": "Berechne Fibonacci-Zahlen zur Bestimmung von Retry-Intervallen",
+        "category": "mathematical",
+        "expected": "heavy",
+        "actual": "code",
+        "complexity": 0.9333333333333333,
+        "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: try; Complexity indicators: berechne, rechne; Scores - Heavy: 1.0, Tech: 1.0)",
+        "debug_info": {
+          "heavy_hits": [],
+          "tech_hits": [],
+          "scores": {
+            "heavy": 1.0,
+            "tech": 1.0,
+            "complexity": 0.9333333333333333
+          },
+          "route_reason": "code_tech T:1.0"
+        },
+        "timestamp": 1757106661.457865,
+        "source": "curriculum_sampling"
+      },
+      {
+        "query": "Berechne Fibonacci-Zahlen zur Bestimmung von Retry-Intervallen",
+        "category": "mathematical",
+        "expected": "heavy",
+        "actual": "code",
+        "complexity": 0.9333333333333333,
+        "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: try; Complexity indicators: berechne, rechne; Scores - Heavy: 1.0, Tech: 1.0)",
+        "debug_info": {
+          "heavy_hits": [],
+          "tech_hits": [],
+          "scores": {
+            "heavy": 1.0,
+            "tech": 1.0,
+            "complexity": 0.9333333333333333
+          },
+          "route_reason": "code_tech T:1.0"
+        },
+        "timestamp": 1757106661.4578824,
+        "source": "curriculum_sampling"
+      },
+      {
+        "query": "Finde die optimale Anzahl von Worker-Threads f\u00fcr CPU-intensive Tasks",
+        "category": "mathematical",
+        "expected": "heavy",
+        "actual": "code",
+        "complexity": 0.5,
+        "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: find, cp; Scores - Heavy: 1.5, Tech: 1.0)",
+        "debug_info": {
+          "heavy_hits": [
+            "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+          ],
+          "tech_hits": [],
+          "scores": {
+            "heavy": 1.5,
+            "tech": 1.0,
+            "complexity": 0.5
+          },
+          "route_reason": "code_tech T:1.0"
+        },
+        "timestamp": 1757106661.4578898,
+        "source": "curriculum_sampling"
+      },
+      {
+        "query": "Finde die optimale Anzahl von Worker-Threads f\u00fcr CPU-intensive Tasks",
+        "category": "mathematical",
+        "expected": "heavy",
+        "actual": "code",
+        "complexity": 0.5,
+        "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: find, cp; Scores - Heavy: 1.5, Tech: 1.0)",
+        "debug_info": {
+          "heavy_hits": [
+            "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+          ],
+          "tech_hits": [],
+          "scores": {
+            "heavy": 1.5,
+            "tech": 1.0,
+            "complexity": 0.5
+          },
+          "route_reason": "code_tech T:1.0"
+        },
+        "timestamp": 1757106661.4579005,
+        "source": "curriculum_sampling"
+      },
+      {
+        "query": "Finde die optimale Anzahl von Worker-Threads f\u00fcr CPU-intensive Tasks",
+        "category": "mathematical",
+        "expected": "heavy",
+        "actual": "code",
+        "complexity": 0.5,
+        "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: find, cp; Scores - Heavy: 1.5, Tech: 1.0)",
+        "debug_info": {
+          "heavy_hits": [
+            "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+          ],
+          "tech_hits": [],
+          "scores": {
+            "heavy": 1.5,
+            "tech": 1.0,
+            "complexity": 0.5
+          },
+          "route_reason": "code_tech T:1.0"
+        },
+        "timestamp": 1757106661.457904,
+        "source": "curriculum_sampling"
+      },
+      {
+        "query": "Ermittle die mathematisch optimale Cache-Gr\u00f6\u00dfe f\u00fcr Datenbank-Queries",
+        "category": "mathematical",
+        "expected": "heavy",
+        "actual": "code",
+        "complexity": 0.6857142857142857,
+        "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: rm; Scores - Heavy: 1.0, Tech: 1.0)",
+        "debug_info": {
+          "heavy_hits": [
+            "\\bmathematisch\\w*\\b.{0,40}\\boptimal\\w*\\b"
+          ],
+          "tech_hits": [],
+          "scores": {
+            "heavy": 1.0,
+            "tech": 1.0,
+            "complexity": 0.6857142857142857
+          },
+          "route_reason": "code_tech T:1.0"
+        },
+        "timestamp": 1757106661.4579103,
+        "source": "curriculum_sampling"
+      },
+      {
+        "query": "Finde die optimale Anzahl von Worker-Threads f\u00fcr CPU-intensive Tasks",
+        "category": "mathematical",
+        "expected": "heavy",
+        "actual": "code",
+        "complexity": 0.5,
+        "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: find, cp; Scores - Heavy: 1.5, Tech: 1.0)",
+        "debug_info": {
+          "heavy_hits": [
+            "\\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|l\u00f6se)\\b[^\\.]{0,80}\\b(optimal\\w*|minimum|maxim\\w*|argmin|argmax)\\b"
+          ],
+          "tech_hits": [],
+          "scores": {
+            "heavy": 1.5,
+            "tech": 1.0,
+            "complexity": 0.5
+          },
+          "route_reason": "code_tech T:1.0"
+        },
+        "timestamp": 1757106661.45792,
+        "source": "curriculum_sampling"
+      },
+      {
+        "query": "Kannst du mir bitte helfen: berechne fibonacci-zahlen zur bestimmung von retry-intervallen",
+        "category": "mathematical",
+        "expected": "heavy",
+        "actual": "code",
+        "complexity": 0.9636363636363637,
+        "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: du; Code keywords: try; Complexity indicators: berechne, rechne; Scores - Heavy: 1.0, Tech: 1.0)",
+        "debug_info": {
+          "heavy_hits": [],
+          "tech_hits": [],
+          "scores": {
+            "heavy": 1.0,
+            "tech": 1.0,
+            "complexity": 0.9636363636363637
+          },
+          "route_reason": "code_tech T:1.0"
+        },
+        "timestamp": 1757106661.4579215,
+        "source": "curriculum_sampling"
+      },
+      {
+        "query": "Finde die optimahle Anzahl von Worker-Threads f\u00fcr CPU-intensive Tasks",
+        "category": "mathematical",
+        "expected": "heavy",
+        "actual": "code",
+        "complexity": 0.5,
+        "reasoning": "Code model selected: code_tech T:1.0 (Linux keywords: find, cp; Scores - Heavy: 0.0, Tech: 1.0)",
+        "debug_info": {
+          "heavy_hits": [],
+          "tech_hits": [],
+          "scores": {
+            "heavy": 0.0,
+            "tech": 1.0,
+            "complexity": 0.5
+          },
+          "route_reason": "code_tech T:1.0"
+        },
+        "timestamp": 1757106661.4579246,
+        "source": "curriculum_sampling"
+      },
+      {
+        "query": "Berechne Fibonacci-Zahlen Zur Bestimmung Von Retry-Intervallen",
+        "category": "mathematical",
+        "expected": "heavy",
+        "actual": "code",
+        "complexity": 0.9333333333333333,
+        "reasoning": "Code model selected: code_tech T:1.0 (Code keywords: try; Complexity indicators: berechne, rechne; Scores - Heavy: 1.0, Tech: 1.0)",
+        "debug_info": {
+          "heavy_hits": [],
+          "tech_hits": [],
+          "scores": {
+            "heavy": 1.0,
+            "tech": 1.0,
+            "complexity": 0.9333333333333333
+          },
+          "route_reason": "code_tech T:1.0"
+        },
+        "timestamp": 1757106661.4579258,
+        "source": "curriculum_sampling"
+      }
+    ],
+    "confusion_matrix": {
+      

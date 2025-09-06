@@ -1,0 +1,43 @@
+modules:
+  core:
+    name: core
+    host: localhost
+    port: 8001
+    enabled: true
+  rag:
+    name: rag
+    host: localhost
+    port: 8002
+    enabled: true
+  agents:
+    name: agents
+    host: localhost
+    port: 8003
+    enabled: true
+  execution:
+    name: execution
+    host: localhost
+    port: 8004
+    enabled: true
+  hybrid:
+    name: hybrid
+    host: localhost
+    port: 8005
+    enabled: true
+  ui:
+    name: ui
+    host: localhost
+    port: 8000
+    enabled: true
+
+features:
+  voice_enabled: false
+  auto_escalation: true
+  safe_mode: true
+  confidence_threshold: 0.5
+
+ollama:
+  host: localhost
+  port: 11434
+  model: llama3.1:8b-instruct-q4_0
+  embedding_model: nomic-embed-text

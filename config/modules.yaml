@@ -1,0 +1,56 @@
+# Linux Superhelfer - Module Configuration
+# This file defines the endpoints and settings for all system modules
+
+modules:
+  core:
+    name: "Core Intelligence Engine"
+    url: "http://localhost"
+    port: 8001
+    enabled: true
+    description: "Ollama-based AI inference with confidence scoring"
+    
+  rag:
+    name: "RAG Knowledge Vault"
+    url: "http://localhost"
+    port: 8002
+    enabled: true
+    description: "Document storage and semantic search with ChromaDB"
+    
+  agents:
+    name: "Proactive Agents"
+    url: "http://localhost"
+    port: 8003
+    enabled: true
+    description: "Task orchestration and workflow execution"
+    
+  execution:
+    name: "Safe Execution & Control"
+    url: "http://localhost"
+    port: 8004
+    enabled: true
+    description: "Command validation and safe execution"
+    
+  hybrid:
+    name: "Hybrid Intelligence Gateway"
+    url: "http://localhost"
+    port: 8005
+    enabled: true
+    description: "External API integration and escalation"
+
+# UI Configuration
+ui:
+  title: "Linux Superhelfer"
+  theme: "light"
+  port: 8501
+  features:
+    voice_input: false
+    voice_output: false
+    auto_execute: false
+    show_confidence: true
+
+# System Settings
+system:
+  timeout: 30
+  max_retries: 3
+  log_level: "INFO"
+  session_timeout: 3600  # 1 hour in seconds

@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  module-a-core:
+    build:
+      context: .
+      dockerfile: modules/module_a_core/Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./shared:/app/shared
+      - ./config.yaml:/app/config.yaml
+    depends_on:
+      - ollama
+
+  module-b-rag:
+    build:
+      context: .
+      dockerfile: modules/module_b_rag/Dockerfile
+    ports:
+      - "8002:8002"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./shared:/app/shared
+      - ./config.yaml:/app/config.yaml
+      - ./data:/app/data
+    depends_on:
+      - ollama
+
+  module-c-agents:
+    build:
+      context: .
+      dockerfile: modules/module_c_agents/Dockerfile
+    ports:
+      - "8003:8003"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./shared:/app/shared
+      - ./config.yaml:/app/config.yaml
+
+  module-d-execution:
+    build:
+      context: .
+      dockerfile: modules/module_d_execution/Dockerfile
+    ports:
+      - "8004:8004"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./shared:/app/shared
+      - ./config.yaml:/app/config.yaml
+
+  module-e-hybrid:
+    build:
+      context: .
+      dockerfile: modules/module_e_hybrid/Dockerfile
+    ports:
+      - "8005:8005"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./shared:/app/shared
+      - ./config.yaml:/app/config.yaml
+
+  module-f-ui:
+    build:
+      context: .
+      dockerfile: modules/module_f_ui/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./shared:/app/shared
+      - ./config.yaml:/app/config.yaml
+    depends_on:
+      - module-a-core
+      - module-b-rag
+      - module-c-agents
+      - module-d-execution
+      - module-e-hybrid
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+
+volumes:
+  ollama_data:

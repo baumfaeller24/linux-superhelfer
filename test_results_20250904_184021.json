@@ -1,0 +1,333 @@
+{
+  "timestamp": "2025-09-04T18:39:59.352724",
+  "system_info": {
+    "python_version": "3.13.3",
+    "gpu_count": 1,
+    "pynvml_available": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.361878",
+      "details": {
+        "gpu_count": 1
+      }
+    },
+    "tiktoken_available": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.435069",
+      "details": {
+        "test_tokens": 1
+      }
+    },
+    "ollama_library_available": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.504177",
+      "details": {}
+    }
+  },
+  "component_tests": {
+    "vram_monitor_init": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.507227",
+      "details": {
+        "device_count": 1
+      }
+    },
+    "vram_info_retrieval": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.517920",
+      "details": {
+        "total_mb": 32607,
+        "used_mb": 2418,
+        "usage_percent": 7.4,
+        "device_name": "NVIDIA GeForce RTX 5090"
+      }
+    },
+    "vram_usage_percentage": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.517946",
+      "details": {
+        "usage_percent": 7.4
+      }
+    },
+    "query_analysis_simple": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.518539",
+      "details": {
+        "query": "Hallo, wie geht es dir?",
+        "expected_code_model": false,
+        "actual_code_model": false,
+        "complexity_score": 0.0,
+        "detected_keywords": [],
+        "reasoning": "Fast model selected: Simple general query"
+      }
+    },
+    "query_analysis_linux_command": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.518565",
+      "details": {
+        "query": "ps aux | grep python",
+        "expected_code_model": true,
+        "actual_code_model": true,
+        "complexity_score": 0.4,
+        "detected_keywords": [
+          "grep",
+          "ps",
+          "python"
+        ],
+        "reasoning": "Code model selected: Linux keywords detected: grep, ps; Code keywords detected: python"
+      }
+    },
+    "query_analysis_code_request": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.518582",
+      "details": {
+        "query": "Schreibe eine Python-Funktion",
+        "expected_code_model": true,
+        "actual_code_model": true,
+        "complexity_score": 0.4,
+        "detected_keywords": [
+          "funktion",
+          "python"
+        ],
+        "reasoning": "Code model selected: Code keywords detected: funktion, python"
+      }
+    },
+    "query_analysis_complex_technical": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.518601",
+      "details": {
+        "query": "Erkl\u00e4re mir detailliert Docker Container",
+        "expected_code_model": true,
+        "actual_code_model": true,
+        "complexity_score": 0.4,
+        "detected_keywords": [
+          "docker",
+          "container",
+          "tail"
+        ],
+        "reasoning": "Code model selected: Linux keywords detected: docker, container, tail"
+      }
+    },
+    "query_analysis_linux_permissions": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.518615",
+      "details": {
+        "query": "chmod 755 /etc/script.sh",
+        "expected_code_model": true,
+        "actual_code_model": true,
+        "complexity_score": 0.4,
+        "detected_keywords": [
+          "chmod"
+        ],
+        "reasoning": "Code model selected: Linux keywords detected: chmod"
+      }
+    },
+    "model_router_init": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.567744",
+      "details": {}
+    },
+    "model_router_health": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.576129",
+      "details": {
+        "router_status": "ok",
+        "vram_monitoring": true,
+        "models": {
+          "fast": {
+            "available": true,
+            "name": "llama3.2:3b"
+          },
+          "code": {
+            "available": true,
+            "name": "qwen3-coder-30b-local"
+          },
+          "heavy": {
+            "available": true,
+            "name": "llama3.1:70b"
+          }
+        }
+      }
+    },
+    "model_availability": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.576153",
+      "details": {
+        "available_models": 3,
+        "total_models": 3
+      }
+    },
+    "routing_fast_model": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.576211",
+      "details": {
+        "query": "Hallo, wie geht es dir?",
+        "expected": "fast",
+        "selected": "fast",
+        "model_name": "llama3.2:3b",
+        "reasoning": "Selected fast model: Fast model selected: Simple general query"
+      }
+    },
+    "routing_code_model": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.576259",
+      "details": {
+        "query": "Schreibe eine Python-Klasse",
+        "expected": "code",
+        "selected": "code",
+        "model_name": "qwen3-coder-30b-local",
+        "reasoning": "Selected code model: Code model selected: Linux keywords detected: ss; Code keywords detected: klasse, python"
+      }
+    },
+    "ollama_fast_model_available": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.580739",
+      "details": {
+        "model_name": "llama3.2:3b"
+      }
+    },
+    "ollama_code_model_available": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.584588",
+      "details": {
+        "model_name": "qwen3-coder-30b-local"
+      }
+    },
+    "ollama_heavy_model_available": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:39:59.597990",
+      "details": {
+        "model_name": "llama3.1:70b"
+      }
+    }
+  },
+  "integration_tests": {
+    "generation_simple_greeting": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:40:01.020225",
+      "details": {
+        "query": "Hallo!",
+        "model_used": "llama3.2:3b",
+        "generation_time": 1.41,
+        "response_length": 265,
+        "routing_info": true
+      }
+    },
+    "generation_linux_command": {
+      "passed": true,
+      "timestamp": "2025-09-04T18:40:21.753633",
+      "details": {
+        "query": "ps aux | grep python",
+        "model_used": "qwen3-coder-30b-local",
+        "generation_time": 20.73,
+        "response_length": 1120,
+        "routing_info": true
+      }
+    }
+  },
+  "performance_metrics": {
+    "vram_usage": {
+      "total_mb": 32607,
+      "used_mb": 2418,
+      "usage_percent": 0.07417119023522556,
+      "device_name": "NVIDIA GeForce RTX 5090"
+    },
+    "query_analysis": [
+      {
+        "query": "Hallo, wie geht es dir?",
+        "needs_code_model": false,
+        "complexity_score": 0.0,
+        "keywords_count": 0
+      },
+      {
+        "query": "ps aux | grep python",
+        "needs_code_model": true,
+        "complexity_score": 0.4,
+        "keywords_count": 3
+      },
+      {
+        "query": "Schreibe eine Python-Funktion",
+        "needs_code_model": true,
+        "complexity_score": 0.4,
+        "keywords_count": 2
+      },
+      {
+        "query": "Erkl\u00e4re mir detailliert Docker Container",
+        "needs_code_model": true,
+        "complexity_score": 0.4,
+        "keywords_count": 3
+      },
+      {
+        "query": "chmod 755 /etc/script.sh",
+        "needs_code_model": true,
+        "complexity_score": 0.4,
+        "keywords_count": 1
+      }
+    ],
+    "routing_decisions": [
+      {
+        "query": "Hallo, wie geht es dir?",
+        "expected_model": "fast",
+        "selected_model": "fast",
+        "model_name": "llama3.2:3b",
+        "correct": true
+      },
+      {
+        "query": "ps aux | grep python",
+        "expected_model": "code",
+        "selected_model": "code",
+        "model_name": "qwen3-coder-30b-local",
+        "correct": true
+      },
+      {
+        "query": "Schreibe eine Python-Klasse",
+        "expected_model": "code",
+        "selected_model": "code",
+        "model_name": "qwen3-coder-30b-local",
+        "correct": true
+      }
+    ],
+    "ollama_models": [
+      {
+        "model_name": "llama3.2:3b",
+        "available": true,
+        "test_name": "fast_model"
+      },
+      {
+        "model_name": "qwen3-coder-30b-local",
+        "available": true,
+        "test_name": "code_model"
+      },
+      {
+        "model_name": "llama3.1:70b",
+        "available": true,
+        "test_name": "heavy_model"
+      }
+    ],
+    "generation_tests": [
+      {
+        "query": "Hallo!",
+        "test_type": "simple_greeting",
+        "success": true,
+        "model_used": "llama3.2:3b",
+        "generation_time": 1.4137327671051025,
+        "response_length": 265
+      },
+      {
+        "query": "ps aux | grep python",
+        "test_type": "linux_command",
+        "success": true,
+        "model_used": "qwen3-coder-30b-local",
+        "generation_time": 20.73338007926941,
+        "response_length": 1120
+      }
+    ]
+  },
+  "errors": [],
+  "summary": {
+    "total_tests": 21,
+    "passed_tests": 21,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "overall_status": "PASS"
+  }
+}

@@ -1,0 +1,16 @@
+# Additional requirements for Qwen3-Coder integration
+
+# VRAM monitoring
+pynvml>=11.5.0
+
+# Token counting for query analysis  
+tiktoken>=0.5.0
+
+# GUI for VRAM warnings (usually included with Python)
+# tkinter  # Built-in on most systems
+
+# Optional: Enhanced text processing
+regex>=2023.0.0
+
+# Model management (if needed for future Ollama API extensions)
+requests>=2.31.0

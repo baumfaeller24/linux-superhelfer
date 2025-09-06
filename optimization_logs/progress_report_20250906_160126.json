@@ -1,0 +1,140 @@
+{
+  "timestamp": 1757167286.595791,
+  "runtime_hours": 0.2832814299397998,
+  "total_cycles": 204,
+  "total_queries": 4080,
+  "overall_accuracy": 75.4656862745098,
+  "recent_accuracy": 70.5,
+  "recent_cost_score": 72.25,
+  "recent_heavy_recall": 79.65873015873015,
+  "routing_distribution": {
+    "fast": 19.362745098039216,
+    "code": 60.514705882352935,
+    "heavy": 20.122549019607845
+  },
+  "accuracy_trend": [
+    {
+      "cycle": 185,
+      "accuracy": 60.0,
+      "timestamp": 507305.016052134,
+      "query_count": 20
+    },
+    {
+      "cycle": 186,
+      "accuracy": 65.0,
+      "timestamp": 507310.040759241,
+      "query_count": 20
+    },
+    {
+      "cycle": 187,
+      "accuracy": 80.0,
+      "timestamp": 507315.06610224,
+      "query_count": 20
+    },
+    {
+      "cycle": 188,
+      "accuracy": 90.0,
+      "timestamp": 507320.091598371,
+      "query_count": 20
+    },
+    {
+      "cycle": 189,
+      "accuracy": 75.0,
+      "timestamp": 507325.117077534,
+      "query_count": 20
+    },
+    {
+      "cycle": 190,
+      "accuracy": 75.0,
+      "timestamp": 507330.139593763,
+      "query_count": 20
+    },
+    {
+      "cycle": 191,
+      "accuracy": 60.0,
+      "timestamp": 507335.164191074,
+      "query_count": 20
+    },
+    {
+      "cycle": 192,
+      "accuracy": 80.0,
+      "timestamp": 507340.189230765,
+      "query_count": 20
+    },
+    {
+      "cycle": 193,
+      "accuracy": 65.0,
+      "timestamp": 507345.214660109,
+      "query_count": 20
+    },
+    {
+      "cycle": 194,
+      "accuracy": 90.0,
+      "timestamp": 507350.239452222,
+      "query_count": 20
+    },
+    {
+      "cycle": 195,
+      "accuracy": 75.0,
+      "timestamp": 507355.26475848,
+      "query_count": 20
+    },
+    {
+      "cycle": 196,
+      "accuracy": 55.0,
+      "timestamp": 507360.285676579,
+      "query_count": 20
+    },
+    {
+      "cycle": 197,
+      "accuracy": 90.0,
+      "timestamp": 507365.311204193,
+      "query_count": 20
+    },
+    {
+      "cycle": 198,
+      "accuracy": 45.0,
+      "timestamp": 507370.336302388,
+      "query_count": 20
+    },
+    {
+      "cycle": 199,
+      "accuracy": 70.0,
+      "timestamp": 507375.361616593,
+      "query_count": 20
+    },
+    {
+      "cycle": 200,
+      "accuracy": 60.0,
+      "timestamp": 507380.387136881,
+      "query_count": 20
+    },
+    {
+      "cycle": 201,
+      "accuracy": 90.0,
+      "timestamp": 507385.409755185,
+      "query_count": 20
+    },
+    {
+      "cycle": 202,
+      "accuracy": 55.0,
+      "timestamp": 507390.436083695,
+      "query_count": 20
+    },
+    {
+      "cycle": 203,
+      "accuracy": 85.0,
+      "timestamp": 507395.461555229,
+      "query_count": 20
+    },
+    {
+      "cycle": 204,
+      "accuracy": 80.0,
+      "timestamp": 507400.487085057,
+      "query_count": 20
+    }
+  ],
+  "queries_per_hour": 14402.638396971666,
+  "cycles_per_hour": 720.1319198485834,
+  "hard_negatives": 388
+}

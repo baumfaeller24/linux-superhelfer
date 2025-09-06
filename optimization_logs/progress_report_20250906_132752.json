@@ -1,0 +1,104 @@
+{
+  "timestamp": 1757158072.9877005,
+  "runtime_hours": 0.018138278722763062,
+  "total_cycles": 14,
+  "total_queries": 280,
+  "overall_accuracy": 62.857142857142854,
+  "recent_accuracy": 63.0,
+  "recent_cost_score": 45.75,
+  "recent_heavy_recall": 38.107142857142854,
+  "routing_distribution": {
+    "fast": 21.785714285714285,
+    "code": 66.42857142857143,
+    "heavy": 11.785714285714285
+  },
+  "accuracy_trend": [
+    {
+      "cycle": 1,
+      "accuracy": 45.0,
+      "timestamp": 1757158007.690144,
+      "query_count": 20
+    },
+    {
+      "cycle": 2,
+      "accuracy": 75.0,
+      "timestamp": 1757158012.7059505,
+      "query_count": 20
+    },
+    {
+      "cycle": 3,
+      "accuracy": 65.0,
+      "timestamp": 1757158017.721806,
+      "query_count": 20
+    },
+    {
+      "cycle": 4,
+      "accuracy": 65.0,
+      "timestamp": 1757158022.7468553,
+      "query_count": 20
+    },
+    {
+      "cycle": 5,
+      "accuracy": 70.0,
+      "timestamp": 1757158027.7704651,
+      "query_count": 20
+    },
+    {
+      "cycle": 6,
+      "accuracy": 80.0,
+      "timestamp": 1757158032.7954848,
+      "query_count": 20
+    },
+    {
+      "cycle": 7,
+      "accuracy": 70.0,
+      "timestamp": 1757158037.8172474,
+      "query_count": 20
+    },
+    {
+      "cycle": 8,
+      "accuracy": 60.0,
+      "timestamp": 1757158042.841951,
+      "query_count": 20
+    },
+    {
+      "cycle": 9,
+      "accuracy": 75.0,
+      "timestamp": 1757158047.8669457,
+      "query_count": 20
+    },
+    {
+      "cycle": 10,
+      "accuracy": 75.0,
+      "timestamp": 1757158052.88192,
+      "query_count": 20
+    },
+    {
+      "cycle": 11,
+      "accuracy": 50.0,
+      "timestamp": 1757158057.907353,
+      "query_count": 20
+    },
+    {
+      "cycle": 12,
+      "accuracy": 45.0,
+      "timestamp": 1757158062.9325082,
+      "query_count": 20
+    },
+    {
+      "cycle": 13,
+      "accuracy": 50.0,
+      "timestamp": 1757158067.9574628,
+      "query_count": 20
+    },
+    {
+      "cycle": 14,
+      "accuracy": 55.0,
+      "timestamp": 1757158072.9819388,
+      "query_count": 20
+    }
+  ],
+  "queries_per_hour": 2800.0,
+  "cycles_per_hour": 140.0,
+  "hard_negatives": 45
+}

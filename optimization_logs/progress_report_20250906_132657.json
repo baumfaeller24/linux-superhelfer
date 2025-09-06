@@ -1,0 +1,38 @@
+{
+  "timestamp": 1757158017.7363653,
+  "runtime_hours": 0.00279068562719557,
+  "total_cycles": 3,
+  "total_queries": 60,
+  "overall_accuracy": 61.666666666666664,
+  "recent_accuracy": 61.666666666666664,
+  "recent_cost_score": 50.0,
+  "recent_heavy_recall": 60.0,
+  "routing_distribution": {
+    "fast": 16.666666666666664,
+    "code": 68.33333333333333,
+    "heavy": 15.0
+  },
+  "accuracy_trend": [
+    {
+      "cycle": 1,
+      "accuracy": 45.0,
+      "timestamp": 1757158007.690144,
+      "query_count": 20
+    },
+    {
+      "cycle": 2,
+      "accuracy": 75.0,
+      "timestamp": 1757158012.7059505,
+      "query_count": 20
+    },
+    {
+      "cycle": 3,
+      "accuracy": 65.0,
+      "timestamp": 1757158017.721806,
+      "query_count": 20
+    }
+  ],
+  "queries_per_hour": 600.0,
+  "cycles_per_hour": 30.0,
+  "hard_negatives": 8
+}

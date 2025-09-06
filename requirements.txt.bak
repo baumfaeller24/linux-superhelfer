@@ -1,0 +1,30 @@
+# Core dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pyyaml==6.0.1
+requests==2.31.0
+
+# AI/ML dependencies
+ollama==0.1.7
+chromadb==0.4.18
+langchain==0.0.350
+langchain-community==0.0.1
+
+# UI dependencies
+streamlit==1.28.2
+
+# Optional voice dependencies
+openai-whisper==20231117
+gtts==2.4.0
+
+# Development and testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+black==23.11.0
+flake8==6.1.0
+
+# Document processing
+pypdf2==3.0.1
+python-multipart==0.0.6

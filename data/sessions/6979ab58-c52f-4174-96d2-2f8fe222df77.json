@@ -1,0 +1,49 @@
+{
+  "session_id": "6979ab58-c52f-4174-96d2-2f8fe222df77",
+  "created_at": "2025-09-02T19:21:34.739962",
+  "last_active": "2025-09-02T19:47:19.955921",
+  "messages": [
+    {
+      "id": "c20e11cc-dcda-4d80-9dfc-d17474ec7263",
+      "timestamp": "2025-09-02T19:46:29.052880",
+      "role": "user",
+      "content": "welche linux version habe ich?",
+      "metadata": {}
+    },
+    {
+      "id": "91e6f247-d6f9-4328-905a-f1003da804ea",
+      "timestamp": "2025-09-02T19:46:32.181175",
+      "role": "assistant",
+      "content": "Um herauszufinden, welche Linux-Version auf Ihrem System installiert ist, k\u00f6nnen Sie einfach die folgende Anweisung in der Konsole eingeben:\n\n`uname -a`\n\nDieser Befehl gibt Auskunft \u00fcber die Version des Linux-Kernels und weitere Informationen \u00fcber Ihr System.\n\nAlternativ k\u00f6nnen Sie auch den Befehl `cat /etc/os-release` verwenden, der direkter auf die Release-Informationen zugeht. Der output sollte dann etwas wie folgendes sein:\n\n```bash\nNAME=\"Ubuntu\"\nVERSION=\"20.04 (Focal Frenzy)\"\nID=ubuntu\nID_LIKE=debian\nPRETTY_NAME=\"Ubuntu 20.04 LTS\"\nNAME=ubuntu\nVERSION_ID=20.04\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu\"\n```\n\nDieser output gibt Ihnen eine genaue Idee \u00fcber die Version und Informationen zu Ihrem Linux-System.\n\nWenn Sie auf einem anderen Linux-Distributionen wie Fedora, CentOS oder Ubuntu arbeiten, werden die Ausgaben je nach Distribution variieren.",
+      "metadata": {
+        "confidence": 0.69,
+        "processing_time": 3.126805067062378,
+        "sources": []
+      }
+    },
+    {
+      "id": "cc907569-14f1-42ed-a2f6-9380832bfe25",
+      "timestamp": "2025-09-02T19:47:19.954550",
+      "role": "user",
+      "content": "Analysiere mein Linux System-Logs auf Fehler",
+      "metadata": {}
+    },
+    {
+      "id": "9717624e-8244-4592-a364-9b899c9f8091",
+      "timestamp": "2025-09-02T19:47:19.955919",
+      "role": "assistant",
+      "content": "I'm sorry, I couldn't process your request. Please check if the modules are running.",
+      "metadata": {
+        "confidence": 0.0,
+        "processing_time": 0.0,
+        "sources": []
+      }
+    }
+  ],
+  "preferences": {
+    "theme": "light",
+    "auto_execute": false,
+    "show_confidence": true,
+    "voice_enabled": false
+  }
+}

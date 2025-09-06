@@ -1,0 +1,148 @@
+{
+  "start_time": "2025-09-05T05:38:12.277974",
+  "current_time": "2025-09-05T17:19:45.223525",
+  "metrics": {
+    "total_tests": 720,
+    "successful_routes": 340,
+    "failed_routes": 380,
+    "avg_response_time": 31.870365334219404,
+    "avg_confidence": 0.6545209083457124,
+    "model_usage": {
+      "fast": 129,
+      "code": 492,
+      "heavy": 99
+    }
+  },
+  "recent_results": [
+    {
+      "timestamp": "2025-09-05T17:13:46.171902",
+      "query": "Was macht der grep Befehl?",
+      "category": "basic",
+      "expected_model": "fast",
+      "actual_model": "code",
+      "complexity_score": 0.4,
+      "confidence": 0.6675873472690582,
+      "response_time": 22.41460132598877,
+      "success": true,
+      "model_used": "qwen3-coder-30b-local",
+      "routing_correct": false
+    },
+    {
+      "timestamp": "2025-09-05T17:14:28.180027",
+      "query": "Wie konfiguriere ich einen Cron-Job f\u00fcr t\u00e4gliche Backups?",
+      "category": "intermediate",
+      "expected_model": "code",
+      "actual_model": "code",
+      "complexity_score": 0.568,
+      "confidence": 0.6749999999999999,
+      "response_time": 40.00572609901428,
+      "success": true,
+      "model_used": "qwen3-coder-30b-local",
+      "routing_correct": true
+    },
+    {
+      "timestamp": "2025-09-05T17:14:59.403930",
+      "query": "Erkl\u00e4re die Unterschiede zwischen systemctl und service",
+      "category": "intermediate",
+      "expected_model": "code",
+      "actual_model": "code",
+      "complexity_score": 0.5,
+      "confidence": 0.660789448261261,
+      "response_time": 29.221976280212402,
+      "success": true,
+      "model_used": "qwen3-coder-30b-local",
+      "routing_correct": true
+    },
+    {
+      "timestamp": "2025-09-05T17:15:48.948678",
+      "query": "Schreibe ein Bash-Skript zum automatischen Backup von /home",
+      "category": "intermediate",
+      "expected_model": "code",
+      "actual_model": "code",
+      "complexity_score": 0.576,
+      "confidence": 0.65,
+      "response_time": 47.54318284988403,
+      "success": true,
+      "model_used": "llama3.2:3b",
+      "routing_correct": true
+    },
+    {
+      "timestamp": "2025-09-05T17:16:37.827955",
+      "query": "Erstelle ein Security-Audit-System f\u00fcr Linux-Server",
+      "category": "advanced",
+      "expected_model": "code",
+      "actual_model": "code",
+      "complexity_score": 0.6829787234042553,
+      "confidence": 0.64,
+      "response_time": 46.87789463996887,
+      "success": true,
+      "model_used": "llama3.2:3b",
+      "routing_correct": true
+    },
+    {
+      "timestamp": "2025-09-05T17:17:26.389208",
+      "query": "Konfiguriere ein High-Availability-Cluster mit Pacemaker",
+      "category": "advanced",
+      "expected_model": "code",
+      "actual_model": "code",
+      "complexity_score": 0.4,
+      "confidence": 0.665,
+      "response_time": 46.558974504470825,
+      "success": true,
+      "model_used": "llama3.2:3b",
+      "routing_correct": true
+    },
+    {
+      "timestamp": "2025-09-05T17:18:14.944622",
+      "query": "Erstelle ein Load-Balancing-Setup mit nginx und mehreren Backends",
+      "category": "advanced",
+      "expected_model": "code",
+      "actual_model": "code",
+      "complexity_score": 0.0,
+      "confidence": 0.665,
+      "response_time": 46.553120136260986,
+      "success": true,
+      "model_used": "llama3.2:3b",
+      "routing_correct": true
+    },
+    {
+      "timestamp": "2025-09-05T17:18:51.576972",
+      "query": "Berechne die optimale Anzahl von Worker-Prozessen basierend auf CPU-Kernen",
+      "category": "mathematical",
+      "expected_model": "heavy",
+      "actual_model": "code",
+      "complexity_score": 0.6000000000000001,
+      "confidence": 0.65,
+      "response_time": 34.62949275970459,
+      "success": true,
+      "model_used": "qwen3-coder-30b-local",
+      "routing_correct": false
+    },
+    {
+      "timestamp": "2025-09-05T17:18:55.046963",
+      "query": "Bestimme die mathematisch optimale Puffergr\u00f6\u00dfe f\u00fcr I/O-Operationen",
+      "category": "mathematical",
+      "expected_model": "heavy",
+      "actual_model": "fast",
+      "complexity_score": 0.0,
+      "confidence": 0.675,
+      "response_time": 1.4679877758026123,
+      "success": true,
+      "model_used": "llama3.2:3b",
+      "routing_correct": false
+    },
+    {
+      "timestamp": "2025-09-05T17:19:43.220764",
+      "query": "Berechne Fibonacci-Zahlen zur Bestimmung von Retry-Intervallen",
+      "category": "mathematical",
+      "expected_model": "heavy",
+      "actual_model": "code",
+      "complexity_score": 0.6333333333333333,
+      "confidence": 0.65,
+      "response_time": 46.171552896499634,
+      "success": true,
+      "model_used": "llama3.2:3b",
+      "routing_correct": false
+    }
+  ]
+}

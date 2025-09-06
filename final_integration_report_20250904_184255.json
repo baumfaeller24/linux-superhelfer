@@ -1,0 +1,163 @@
+{
+  "timestamp": "2025-09-04T18:42:55.840940",
+  "summary": {
+    "overall_success": true,
+    "endpoint_success_rate": 100.0,
+    "routing_accuracy": 100.0,
+    "avg_response_time": 21.97
+  },
+  "endpoint_results": {
+    "health": {
+      "status_code": 200,
+      "success": true,
+      "response": {
+        "status": "ok",
+        "timestamp": "2025-09-04T18:41:42.625074",
+        "version": "1.0.0"
+      }
+    },
+    "router_status": {
+      "status_code": 200,
+      "success": true,
+      "response": {
+        "module": "Core Intelligence Engine with Model Router",
+        "version": "2.0.0",
+        "router_health": {
+          "router_status": "ok",
+          "vram_monitoring": true,
+          "models": {
+            "fast": {
+              "available": true,
+              "name": "llama3.2:3b"
+            },
+            "code": {
+              "available": true,
+              "name": "qwen3-coder-30b-local"
+            },
+            "heavy": {
+              "available": true,
+              "name": "llama3.1:70b"
+            }
+          }
+        },
+        "current_model_info": {
+          "current_model": {
+            "type": "fast",
+            "name": "llama3.2:3b",
+            "description": "Fast general-purpose model",
+            "vram_mb": 2000
+          },
+          "vram_status": {
+            "total_mb": 32607,
+            "used_mb": 7324,
+            "usage_percent": 0.22464118134142974,
+            "monitoring_available": true
+          },
+          "available_models": {
+            "fast": {
+              "name": "llama3.2:3b",
+              "description": "Fast general-purpose model",
+              "vram_mb": 2000
+            },
+            "code": {
+              "name": "qwen3-coder-30b-local",
+              "description": "Specialized code and Linux model (Qwen3-Coder 30B)",
+              "vram_mb": 18000
+            },
+            "heavy": {
+              "name": "llama3.1:70b",
+              "description": "Heavy model for extreme complexity",
+              "vram_mb": 42000
+            }
+          }
+        },
+        "features": {
+          "intelligent_routing": true,
+          "vram_monitoring": true,
+          "qwen3_coder_integration": true,
+          "context_enhancement": true
+        }
+      }
+    },
+    "status": {
+      "status_code": 200,
+      "success": true,
+      "response": {
+        "module": "Core Intelligence Engine",
+        "version": "1.0.0",
+        "status": "operational",
+        "ollama": {
+          "available": true,
+          "host": "localhost",
+          "port": 11434,
+          "model": "llama3.1:8b-instruct-q4_0"
+        },
+        "knowledge_base": {
+          "available": true,
+          "base_url": "http://localhost:8002",
+          "timeout": 5.0
+        },
+        "endpoints": [
+          "/health",
+          "/infer",
+          "/infer_single_model",
+          "/infer_with_context",
+          "/status",
+          "/router_status"
+        ],
+        "features": {
+          "context_enhancement": true,
+          "automatic_context_search": true,
+          "confidence_threshold": 0.5
+        }
+      }
+    }
+  },
+  "routing_results": [
+    {
+      "test_name": "simple_greeting",
+      "query": "Hallo, wie geht es dir heute?",
+      "success": true,
+      "correct_routing": true,
+      "expected_model_type": "fast",
+      "selected_model": "fast",
+      "model_used": "llama3.2:3b",
+      "response_time": 0.92,
+      "response_length": 189,
+      "confidence": 0.7478,
+      "routing_reasoning": "Selected fast model: Fast model selected: Simple general query"
+    },
+    {
+      "test_name": "linux_command",
+      "query": "Zeige mir alle Python-Prozesse mit ps aux | grep python",
+      "success": true,
+      "correct_routing": true,
+      "expected_model_type": "code",
+      "selected_model": "code",
+      "model_used": "qwen3-coder-30b-local",
+      "response_time": 18.71,
+      "response_length": 905,
+      "confidence": 0.671295024394989,
+      "routing_reasoning": "Selected code model: Code model selected: Linux keywords detected: grep, ps, ss; Code keywords detected: python"
+    },
+    {
+      "test_name": "code_generation",
+      "query": "Schreibe eine Python-Funktion zum Kopieren von Dateien",
+      "success": true,
+      "correct_routing": true,
+      "expected_model_type": "code",
+      "selected_model": "code",
+      "model_used": "llama3.2:3b",
+      "response_time": 46.29,
+      "response_length": 1424,
+      "confidence": 0.635,
+      "routing_reasoning": "Selected code model: Code model selected: Code keywords detected: funktion, python"
+    }
+  ],
+  "legacy_result": {
+    "success": true,
+    "model_used": "llama3.1:8b-instruct-q4_0",
+    "response_time": 7.27,
+    "response_length": 481
+  }
+}

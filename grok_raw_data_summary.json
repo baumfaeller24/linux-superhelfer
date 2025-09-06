@@ -1,0 +1,115 @@
+{
+  "optimization_summary": {
+    "runtime_hours": 11.58,
+    "total_cycles": 60,
+    "total_tests": 708,
+    "routing_accuracy": 0.47,
+    "avg_response_time": 31.87,
+    "avg_confidence": 0.654
+  },
+  "routing_failures_by_category": {
+    "basic_queries": {
+      "total_misroutes": 129,
+      "main_issue": "Fast Model queries routed to Code Model",
+      "complexity_range": "0.100-0.333",
+      "expected_complexity": "<0.3"
+    },
+    "mathematical_queries": {
+      "total_misroutes": 141,
+      "main_issue": "Heavy Model queries routed to Fast/Code Models",
+      "complexity_range": "0.000-0.633",
+      "expected_complexity": ">0.7"
+    },
+    "intermediate_queries": {
+      "total_misroutes": 45,
+      "main_issue": "Code Model queries routed to Fast/Heavy Models"
+    },
+    "advanced_queries": {
+      "total_misroutes": 60,
+      "main_issue": "Code Model queries routed to Heavy Model due to high complexity"
+    }
+  },
+  "model_usage_distribution": {
+    "code_model": {
+      "count": 482,
+      "percentage": 68.1,
+      "note": "Overused - many basic queries incorrectly routed here"
+    },
+    "fast_model": {
+      "count": 127,
+      "percentage": 17.9,
+      "note": "Underused - should handle more basic queries"
+    },
+    "heavy_model": {
+      "count": 99,
+      "percentage": 14.0,
+      "note": "Underused - mathematical queries not reaching it"
+    }
+  },
+  "performance_issues": {
+    "timeout_rate": 0.59,
+    "slow_responses_over_30s": 418,
+    "low_confidence_under_0_6": 58,
+    "fallback_routing_frequency": "High due to timeouts"
+  },
+  "complexity_scoring_problems": {
+    "mathematical_underscoring": {
+      "issue": "Mathematical queries scoring 0.000 complexity",
+      "examples": [
+        "Bestimme die mathematisch optimale Puffergröße für I/O-Operationen: 0.000",
+        "Berechne Fibonacci-Zahlen zur Bestimmung von Retry-Intervallen: 0.633"
+      ]
+    },
+    "basic_overscoring": {
+      "issue": "Simple Linux commands scoring too high",
+      "examples": [
+        "Welcher Befehl zeigt die Festplattenbelegung an?: 0.333",
+        "Basic Linux queries consistently 0.286-0.333"
+      ]
+    }
+  },
+  "current_thresholds": {
+    "heavy_model": "> 0.7 complexity_score",
+    "code_model": "needs_code_model=True OR complexity_score > 0.5",
+    "fast_model": "default fallback"
+  },
+  "optimization_recommendations": [
+    "Lower Heavy Model threshold from 0.7 to 0.6",
+    "Improve mathematical complexity detection patterns",
+    "Add basic query filtering to prevent Code Model over-routing",
+    "Implement timeout mitigation strategies",
+    "Enhance training data for better confidence scores"
+  ],
+  "sample_misrouted_queries": [
+    {
+      "query": "Welcher Befehl zeigt die Festplattenbelegung an?",
+      "category": "basic",
+      "expected": "fast",
+      "actual": "code",
+      "complexity": 0.333,
+      "issue": "Basic query over-routed to Code Model"
+    },
+    {
+      "query": "Bestimme die mathematisch optimale Puffergröße für I/O-Operationen",
+      "category": "mathematical", 
+      "expected": "heavy",
+      "actual": "fast",
+      "complexity": 0.000,
+      "issue": "Mathematical query under-scored and mis-routed"
+    },
+    {
+      "query": "Entwickle ein komplexes Monitoring-System mit Bash und Python",
+      "category": "advanced",
+      "expected": "code", 
+      "actual": "heavy",
+      "complexity": 0.765,
+      "issue": "Advanced query over-routed due to high complexity"
+    }
+  ],
+  "system_health": {
+    "modules_running": true,
+    "vram_usage": "24.0% (optimal)",
+    "api_endpoints": "responsive",
+    "fallback_mechanism": "functional"
+  }
+}
