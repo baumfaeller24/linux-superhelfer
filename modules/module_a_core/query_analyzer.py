@@ -205,7 +205,7 @@ class QueryAnalyzer:
                 return MODEL_FAST
         
         # Don't route mathematical queries to FAST just because they're short
-        has_math_content = re.search(r"\b(berechne|fibonacci|gleichung|löse|mathematisch|optimal|x\s*[=+\-]|zahlen)\b", qn)
+        has_math_content = re.search(r"\b(berechne|fibonacci|gleichung|löse|mathematisch|optimal|x\s*[=+\-]|zahlen|integral|eigenwerte|matrix|polynom|faktorisiere|zeige|mod|fläche|derangements|dreieck|projektplanung|cpm|kreisgeometrie|kombinatorik|dezimalzahlen|quersumme|fourier|analyse|poisson|summationsformel|schwartz|theta|lineare|algebra|charakterisiere|diagonaliserbar|spektralsatz|transportproblem|kostenmatrix|nordwestecke|modi|codierungstheorie|generator|paritaetsmatrix)\b|[∫∑π≡∞²³⁴]", qn)
         
         if token_count < 5 and not (linux_kw or code_kw or has_math_content):
             self.debug['route_reason'] = 'fast_short'
@@ -220,17 +220,24 @@ class QueryAnalyzer:
             math_programming = re.search(r"\b(fibonacci|primzahl|algorithmus|parser|berechnung|mathematisch).*\b(funktion|function|script|implementiere|programmiere|code)\b", qn) or \
                               re.search(r"\b(implementiere|programmiere|schreibe).*\b(fibonacci|primzahl|algorithmus|parser|berechnung|mathematisch)\b", qn)
             
-            if math_programming:
+            # Check if it's pure mathematical theory (should go to HEAVY despite "zeige" or "gib")
+            pure_math_theory = re.search(r"\b(fourier.*analyse|codierungstheorie|zahlentheorie|topologie|geometrie|maßtheorie|spektralgraphen|variationsrechnung).*\b(zeige|gib|beweise)\b", qn)
+            
+            if math_programming and not pure_math_theory:
                 self.debug['route_reason'] = 'code_mathematical_programming'
                 return MODEL_CODE
             
-            # General programming tasks
-            self.debug['route_reason'] = 'code_programming_task'
-            return MODEL_CODE
+            # Don't route pure mathematical theory to CODE just because of "zeige" or "gib"
+            if pure_math_theory:
+                pass  # Continue to mathematical detection
+            else:
+                # General programming tasks
+                self.debug['route_reason'] = 'code_programming_task'
+                return MODEL_CODE
         
         # 2) PURE MATHEMATICAL PROBLEMS - Only for non-programming math
-        math_indicators = re.search(r"\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|löse|mathematisch|optimal|fibonacci|gleichung|mathe|rechnen|werte\s+haben|ganze\s+zahlen)\b", qn)
-        pure_math = re.search(r"(x\s*[\+\-\*\/=<>]|[\+\-\*\/=<>]\s*x|x\s+[\+\-]\s+y|gleichung|mathe|rechnen|bedingung\w*|erfüll\w*|zahlen.*x.*y.*z|x.*y.*=.*\d+)", qn)
+        math_indicators = re.search(r"\b(bestimme|berechne|minimiere|maximiere|optimiere|finde|löse|mathematisch|optimal|fibonacci|gleichung|mathe|rechnen|werte\s+haben|ganze\s+zahlen|zeige|integral|eigenwerte|matrix|derangements|fourierreihe|polynom|faktorisiere|binom|mod|fläche|dreiecks?|einheitskreis|anzahl.*derangements|beweise|satz|lemma|theorem|spektral|martingal|laplace|topologie|geometrie|kombinatorik|zahlentheorie|variationsrechnung|maßtheorie|funktionalgleichung|informationstheorie|codierungstheorie|graphentheorie|konvexe|dualität|isoperimetrisch|carathéodory|erdős|ramsey|hamming|young|tableaux|kongruenz|tsp|bayes|portfolio|nash|brachistochrone|zykloide|projektplanung|cpm|kreisgeometrie|dezimalzahlen|quersumme|fourier|analyse|poisson|summationsformel|schwartz|theta|lineare|algebra|charakterisiere|diagonaliserbar|spektralsatz|transportproblem|kostenmatrix|nordwestecke|modi|generator|paritaetsmatrix)\b", qn)
+        pure_math = re.search(r"(x\s*[\+\-\*\/=<>]|[\+\-\*\/=<>]\s*x|x\s+[\+\-]\s+y|gleichung|mathe|rechnen|bedingung\w*|erfüll\w*|zahlen.*x.*y.*z|x.*y.*=.*\d+|∫|∑|π|≡|∞|²|³|⁴|x\^?\d+|sin\(|cos\(|ln\(|martingal|fourier|derangements|fläche.*dreieck|gleichseitig|zeige.*dass|beweise.*satz|summe.*über|integral.*von|wahrscheinlichkeit.*posterior|eigenwerte.*matrix|spektral.*graph|laplace.*matrix|nash.*gleichgewicht|ramsey.*zahl|hamming.*code|young.*tableaux|kongruenz.*mod|tsp.*minimum|bayes.*update|portfolio.*varianz|isoperimetrische.*ungleichung|projektplanung.*cpm|kreisgeometrie.*kreis|kombinatorik.*dezimalzahlen|fourier.*analyse|poisson.*summationsformel|lineare.*algebra|charakterisiere.*diagonaliserbar|transportproblem.*kostenmatrix|codierungstheorie.*hamming)", qn)
         
         # System optimization with mathematical context (HEAVY model)
         system_math_optimization = re.search(r"\b(puffergröße|blockgröße|cache|buffer|thread|worker|connection|pool|batch).*\b(optimal|mathematisch|berechne|bestimme)\b", qn) or \
@@ -412,7 +419,7 @@ class QueryAnalyzer:
         score = 0.0
         query_lower = query.lower()
         
-        # Enhanced mathematical symbols and notation (Grok's recommendations)
+        # Enhanced mathematical symbols and notation (Grok's recommendations + Advanced patterns)
         math_symbols = [
             r'x\^?2|y\^?2|z\^?2',           # squared variables
             r'x²|y²|z²',                     # unicode squared symbols
@@ -438,6 +445,35 @@ class QueryAnalyzer:
             r'puffer.*größe',                # "buffer size"
             r'optimal.*größe',               # "optimal size"
             r'mathematisch.*puffer',         # "mathematical buffer"
+            
+            # Advanced mathematical patterns for complex problems
+            r'zeige.*dass.*summe',           # "zeige dass summe"
+            r'beweise.*satz',                # "beweise satz"
+            r'eigenwerte.*matrix',           # "eigenwerte matrix"
+            r'laplace.*matrix',              # "laplace matrix"
+            r'spektral.*graph',              # "spektral graph"
+            r'martingal.*ist',               # "martingal ist"
+            r'fourier.*reihe',               # "fourier reihe"
+            r'ito.*lemma',                   # "ito lemma"
+            r'brownsche.*bewegung',          # "brownsche bewegung"
+            r'wahrscheinlichkeits.*theorie', # "wahrscheinlichkeits theorie"
+            r'zahlentheorie.*anzahl',        # "zahlentheorie anzahl"
+            r'kombinatorik.*anzahl',         # "kombinatorik anzahl"
+            r'topologie.*zeige',             # "topologie zeige"
+            r'geometrie.*beweise',           # "geometrie beweise"
+            r'optimierung.*loese',           # "optimierung loese"
+            r'variationsrechnung.*loese',    # "variationsrechnung loese"
+            r'tsp.*minimum',                 # "tsp minimum"
+            r'bayes.*update',                # "bayes update"
+            r'portfolio.*varianz',           # "portfolio varianz"
+            r'nash.*gleichgewicht',          # "nash gleichgewicht"
+            r'ramsey.*zahl',                 # "ramsey zahl"
+            r'hamming.*code',                # "hamming code"
+            r'young.*tableaux',              # "young tableaux"
+            r'derangements.*von',            # "derangements von"
+            r'kongruenz.*mod',               # "kongruenz mod"
+            r'binom.*gleich',                # "binom gleich"
+            r'isoperimetrische.*ungleichung', # "isoperimetrische ungleichung"
         ]
         
         math_symbol_count = 0
@@ -453,7 +489,7 @@ class QueryAnalyzer:
         elif math_symbol_count >= 1:
             score += 0.3  # Medium mathematical complexity (increased)
         
-        # Enhanced mathematical keywords (Grok's expanded list)
+        # Enhanced mathematical keywords (Grok's expanded list + Advanced terms)
         math_keywords = [
             'löse', 'solve', 'berechne', 'calculate', 'finde', 'find',
             'bestimme', 'determine', 'werte', 'values', 'zahlen', 'numbers',
@@ -463,7 +499,24 @@ class QueryAnalyzer:
             'matrix', 'vektor', 'vector', 'integral', 'differential',
             'wahrscheinlichkeit', 'probability', 'statistik', 'statistics',
             'algorithmus', 'algorithm', 'komplexität', 'complexity',
-            'optimierung', 'optimization', 'minimum', 'maximum'
+            'optimierung', 'optimization', 'minimum', 'maximum',
+            
+            # Advanced mathematical terms for complex problems
+            'zeige', 'beweise', 'beweis', 'satz', 'theorem', 'lemma',
+            'eigenwerte', 'eigenvalues', 'spektral', 'spectral',
+            'martingal', 'martingale', 'fourier', 'laplace',
+            'topologie', 'topology', 'geometrie', 'geometry',
+            'kombinatorik', 'combinatorics', 'zahlentheorie', 'number theory',
+            'variationsrechnung', 'calculus of variations',
+            'maßtheorie', 'measure theory', 'funktionalgleichung',
+            'informationstheorie', 'information theory',
+            'codierungstheorie', 'coding theory', 'graphentheorie', 'graph theory',
+            'konvexe', 'convex', 'dualität', 'duality',
+            'isoperimetrisch', 'isoperimetric', 'carathéodory',
+            'erdős', 'ramsey', 'hamming', 'young', 'tableaux',
+            'derangements', 'kongruenz', 'congruence', 'binom', 'binomial',
+            'tsp', 'bayes', 'portfolio', 'nash', 'gleichgewicht',
+            'brachistochrone', 'zykloide', 'cycloid'
         ]
         
         math_keyword_count = sum(1 for kw in math_keywords if kw in query_lower)
