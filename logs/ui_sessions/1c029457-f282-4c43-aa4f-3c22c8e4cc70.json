@@ -1,0 +1,150 @@
+{
+  "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+  "created_at": "2025-09-07T18:10:01.048200",
+  "interactions": [
+    {
+      "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+      "timestamp": "2025-09-07T18:10:01.048035",
+      "interaction_type": "response_received",
+      "data": {
+        "response": "Ich bin ein KI-Assistent, der speziell f\u00fcr die Unterst\u00fctzung bei Linux-Administrationsaufgaben entwickelt wurde. Ich kann dir bei folgenden Themen helfen:\n\n**H\u00e4ufige Linux-Administrationsthemen:**\n- S...",
+        "response_length": 869,
+        "metadata": {
+          "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+          "response_time": 17.38981556892395,
+          "confidence": 0.6576116859912872,
+          "model_used": "qwen3-coder-30b-local",
+          "context_used": false,
+          "routing_info": {
+            "selected_model": "code",
+            "reasoning": "Selected code model: Code model selected: code_tech T:1.0 (Linux keywords: du; Scores - Heavy: 0.0, Tech: 1.0)",
+            "complexity_score": 0.4,
+            "vram_check_passed": true
+          }
+        }
+      }
+    },
+    {
+      "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+      "timestamp": "2025-09-07T18:11:07.014511",
+      "interaction_type": "query_sent",
+      "data": {
+        "query": "\u00fcber was haben wir gerade gesprochen?",
+        "metadata": {
+          "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+          "use_context": true
+        }
+      }
+    },
+    {
+      "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+      "timestamp": "2025-09-07T18:11:45.280529",
+      "interaction_type": "response_received",
+      "data": {
+        "response": "Wir hatten gerade eine kurze Einf\u00fchrung, in der ich mich vorgestellt habe als ein KI-Assistent f\u00fcr Linux-Administrationsaufgaben. Es gab keine spezifische Frage oder ein bestimmtes Thema, \u00fcber das wir...",
+        "response_length": 328,
+        "metadata": {
+          "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+          "response_time": 38.26487064361572,
+          "confidence": 0.7244,
+          "model_used": "llama3.1:70b",
+          "context_used": false,
+          "routing_info": {
+            "selected_model": "heavy",
+            "reasoning": "Selected heavy model: Heavy model selected: heavy_math_detection_enhanced (Linux keywords: du, ss)",
+            "complexity_score": 0.1930232558139535,
+            "vram_check_passed": true
+          }
+        }
+      }
+    },
+    {
+      "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+      "timestamp": "2025-09-07T18:24:54.041031",
+      "interaction_type": "query_sent",
+      "data": {
+        "query": "Erstelle ein Bash-Skript, das die letzten 100 Zeilen aus /var/log/syslog einliest und \u00fcberpr\u00fcft, ob darin W\u00f6rter wie error, failed oder critical vorkommen.\n\nWenn ja \u2192 soll eine rote Warnmeldung auf dem Bildschirm erscheinen.\n\nOptional: Schreibe die Treffer zus\u00e4tzlich in eine Datei ~/log_alerts.txt.\n\nBonus: Das Skript soll mit einem Argument starten, z. B. ./logcheck.sh 200, um die Anzahl der zu pr\u00fcfenden Zeilen flexibel zu machen.",
+        "metadata": {
+          "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+          "use_context": true
+        }
+      }
+    },
+    {
+      "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+      "timestamp": "2025-09-07T18:25:54.103872",
+      "interaction_type": "error_occurred",
+      "data": {
+        "error": "HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=60)",
+        "context": {
+          "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+          "query": "Erstelle ein Bash-Skript, das die letzten 100 Zeilen aus /var/log/syslog einliest und \u00fcberpr\u00fcft, ob darin W\u00f6rter wie error, failed oder critical vorkommen.\n\nWenn ja \u2192 soll eine rote Warnmeldung auf dem Bildschirm erscheinen.\n\nOptional: Schreibe die Treffer zus\u00e4tzlich in eine Datei ~/log_alerts.txt.\n\nBonus: Das Skript soll mit einem Argument starten, z. B. ./logcheck.sh 200, um die Anzahl der zu pr\u00fcfenden Zeilen flexibel zu machen.",
+          "response_time": 60.06076765060425
+        }
+      }
+    },
+    {
+      "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+      "timestamp": "2025-09-07T18:30:07.000500",
+      "interaction_type": "query_sent",
+      "data": {
+        "query": "Erstelle ein Bash-Skript, das die letzten 100 Zeilen aus /var/log/syslog einliest und \u00fcberpr\u00fcft, ob darin W\u00f6rter wie error, failed oder critical vorkommen.\n\nWenn ja \u2192 soll eine rote Warnmeldung auf dem Bildschirm erscheinen.\n\nOptional: Schreibe die Treffer zus\u00e4tzlich in eine Datei ~/log_alerts.txt.\n\nBonus: Das Skript soll mit einem Argument starten, z. B. ./logcheck.sh 200, um die Anzahl der zu pr\u00fcfenden Zeilen flexibel zu machen.",
+        "metadata": {
+          "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+          "use_context": true
+        }
+      }
+    },
+    {
+      "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+      "timestamp": "2025-09-07T18:31:07.046970",
+      "interaction_type": "error_occurred",
+      "data": {
+        "error": "HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=60)",
+        "context": {
+          "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+          "query": "Erstelle ein Bash-Skript, das die letzten 100 Zeilen aus /var/log/syslog einliest und \u00fcberpr\u00fcft, ob darin W\u00f6rter wie error, failed oder critical vorkommen.\n\nWenn ja \u2192 soll eine rote Warnmeldung auf dem Bildschirm erscheinen.\n\nOptional: Schreibe die Treffer zus\u00e4tzlich in eine Datei ~/log_alerts.txt.\n\nBonus: Das Skript soll mit einem Argument starten, z. B. ./logcheck.sh 200, um die Anzahl der zu pr\u00fcfenden Zeilen flexibel zu machen.",
+          "response_time": 60.04368329048157
+        }
+      }
+    },
+    {
+      "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+      "timestamp": "2025-09-07T18:32:48.074917",
+      "interaction_type": "query_sent",
+      "data": {
+        "query": "Erstelle ein Bash-Skript, das alle 10 Sekunden die **CPU- und RAM-Auslastung** pr\u00fcft.\n\n-   Wenn ein einzelner Prozess **mehr als 80% CPU** oder **mehr als 2 GB RAM** verbraucht, soll er automatisch beendet werden.\n    \n-   Vor dem Killen soll eine **Warnung mit Prozessname & PID** angezeigt werden.\n    \n-   Alle Aktionen sollen zus\u00e4tzlich in `~/process_monitor.log` protokolliert werden.\n\n",
+        "metadata": {
+          "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+          "use_context": true
+        }
+      }
+    },
+    {
+      "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+      "timestamp": "2025-09-07T18:33:48.524787",
+      "interaction_type": "query_sent",
+      "data": {
+        "query": "> Schreibe ein Bash-Skript, das einen Ordner (`~/Projekte/`) in ein Backup-Verzeichnis (`~/Backups/`) kopiert.\n> \n> -   Das Backup soll automatisch einen Zeitstempel im Namen haben (z. B. `Projekte_2025-09-03_07-30.tar.gz`).\n>     \n> -   Es sollen **nur die letzten 5 Backups behalten** werden, \u00e4ltere Backups werden automatisch gel\u00f6scht.\n>     \n> -   Falls der Zielordner nicht existiert, soll er automatisch angelegt werden.\n>\n\n",
+        "metadata": {
+          "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+          "use_context": true
+        }
+      }
+    },
+    {
+      "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+      "timestamp": "2025-09-07T18:34:48.594087",
+      "interaction_type": "error_occurred",
+      "data": {
+        "error": "HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=60)",
+        "context": {
+          "session_id": "1c029457-f282-4c43-aa4f-3c22c8e4cc70",
+          "query": "> Schreibe ein Bash-Skript, das einen Ordner (`~/Projekte/`) in ein Backup-Verzeichnis (`~/Backups/`) kopiert.\n> \n> -   Das Backup soll automatisch einen Zeitstempel im Namen haben (z. B. `Projekte_2025-09-03_07-30.tar.gz`).\n>     \n> -   Es sollen **nur die letzten 5 Backups behalten** werden, \u00e4ltere Backups werden automatisch gel\u00f6scht.\n>     \n> -   Falls der Zielordner nicht existiert, soll er automatisch angelegt werden.\n>\n\n",
+          "response_time": 60.061846017837524
+        }
+      }
+    }
+  ],
+  "last_updated": "2025-09-07T18:34:48.594087"
+}

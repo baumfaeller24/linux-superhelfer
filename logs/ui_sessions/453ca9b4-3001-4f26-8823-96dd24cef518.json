@@ -1,0 +1,100 @@
+{
+  "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+  "created_at": "2025-09-07T18:41:20.360068",
+  "interactions": [
+    {
+      "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+      "timestamp": "2025-09-07T18:41:20.359975",
+      "interaction_type": "response_received",
+      "data": {
+        "response": "Hier ist ein Bash-Skript, das deine Anforderungen erf\u00fcllt:\n\n```bash\n#!/bin/bash\n\n# Konfiguration\nSOURCE_DIR=\"$HOME/Projekte\"\nBACKUP_DIR=\"$HOME/Backups\"\nMAX_BACKUPS=5\n\n# Zielordner erstellen, falls nic...",
+        "response_length": 1782,
+        "metadata": {
+          "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+          "response_time": 40.225947856903076,
+          "confidence": 0.65,
+          "model_used": "qwen3-coder-30b-local",
+          "context_used": false,
+          "routing_info": {
+            "selected_model": "code",
+            "reasoning": "Selected code model: Code model selected: code_programming_task (Linux keywords: bash, ps, tar)",
+            "complexity_score": 0.3016949152542373,
+            "vram_check_passed": true
+          }
+        }
+      }
+    },
+    {
+      "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+      "timestamp": "2025-09-07T18:41:56.772193",
+      "interaction_type": "query_sent",
+      "data": {
+        "query": "k\u00f6nntest du auch ein kleines spiel schreiben?",
+        "metadata": {
+          "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+          "use_context": true
+        }
+      }
+    },
+    {
+      "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+      "timestamp": "2025-09-07T18:42:21.820159",
+      "interaction_type": "response_received",
+      "data": {
+        "response": "Ja, gerne! Hier ist ein einfaches Textbasiertes Spiel in Bash - ein \"Rate das Zahl\" Spiel:\n\n```bash\n#!/bin/bash\n\n# Rate die Zahl - Ein simples Spiel\necho \"Willkommen zum Rate-die-Zahl-Spiel!\"\necho \"Ic...",
+        "response_length": 1369,
+        "metadata": {
+          "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+          "response_time": 25.046826362609863,
+          "confidence": 0.6649547507762908,
+          "model_used": "qwen3-coder-30b-local",
+          "context_used": false,
+          "routing_info": {
+            "selected_model": "code",
+            "reasoning": "Selected code model: Code model selected: code_programming_task (Linux keywords: bash, du, ps; Code keywords: test, for)",
+            "complexity_score": 0.3414141414141414,
+            "vram_check_passed": true
+          }
+        }
+      }
+    },
+    {
+      "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+      "timestamp": "2025-09-07T18:45:50.838657",
+      "interaction_type": "query_sent",
+      "data": {
+        "query": "k\u00f6nntest du ein script f\u00fcr dieses alte pingpong spiel schreiben, wo sich links und rechts ein balken befindet. ein balken wird durch die ki genutzt der andere balken durch den anwender",
+        "metadata": {
+          "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+          "use_context": true
+        }
+      }
+    },
+    {
+      "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+      "timestamp": "2025-09-07T18:46:50.900070",
+      "interaction_type": "error_occurred",
+      "data": {
+        "error": "HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=60)",
+        "context": {
+          "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+          "query": "k\u00f6nntest du ein script f\u00fcr dieses alte pingpong spiel schreiben, wo sich links und rechts ein balken befindet. ein balken wird durch die ki genutzt der andere balken durch den anwender",
+          "response_time": 60.06007218360901
+        }
+      }
+    },
+    {
+      "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+      "timestamp": "2025-09-07T19:02:39.573695",
+      "interaction_type": "query_sent",
+      "data": {
+        "query": "k\u00f6nntest du ein script f\u00fcr dieses alte pingpong spiel schreiben, wo sich links und rechts ein balken befindet. ein balken wird durch die ki genutzt der andere balken durch den anwender\n\n",
+        "metadata": {
+          "session_id": "453ca9b4-3001-4f26-8823-96dd24cef518",
+          "use_context": true
+        }
+      }
+    }
+  ],
+  "last_updated": "2025-09-07T19:02:39.573695"
+}

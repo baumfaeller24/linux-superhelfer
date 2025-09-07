@@ -103,10 +103,11 @@ class ModuleOrchestrator:
     def send_query(self, query: str, use_context: bool = True) -> Dict[str, Any]:
         """Send query to Core Intelligence with intelligent routing."""
         try:
-            # Prepare payload
+            # Prepare payload with session_id
             payload = {
                 "query": query,
-                "enable_context_search": use_context
+                "enable_context_search": use_context,
+                "session_id": st.session_state.session_id
             }
             
             # Send to intelligent routing endpoint
@@ -114,12 +115,17 @@ class ModuleOrchestrator:
             response = requests.post(
                 f"{self.modules['core']}/infer",
                 json=payload,
-                timeout=60
+                timeout=300  # 5 minutes for very complex code generation
             )
             response_time = time.time() - start_time
             
             if response.status_code == 200:
                 data = response.json()
+                
+                # Update session_id if returned from API
+                returned_session_id = data.get('session_id')
+                if returned_session_id:
+                    st.session_state.session_id = returned_session_id
                 
                 # Extract routing information
                 routing_info = data.get('routing_info', {})
@@ -132,6 +138,7 @@ class ModuleOrchestrator:
                     'response_time': response_time,
                     'context_used': data.get('context_used', False),
                     'sources': data.get('sources', []),
+                    'session_id': returned_session_id,
                     'routing_info': {
                         'selected_model': routing_info.get('selected_model', 'unknown'),
                         'reasoning': routing_info.get('reasoning', 'N/A'),
@@ -263,6 +270,26 @@ def render_sidebar():
     if st.sidebar.button("📊 System Info"):
         st.session_state.show_system_info = True
     
+    # Session Information
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("🔗 Session Info")
+    
+    # Display current session ID (shortened)
+    session_id_short = st.session_state.session_id[-8:] if len(st.session_state.session_id) > 8 else st.session_state.session_id
+    st.sidebar.text(f"ID: ...{session_id_short}")
+    
+    # Session stats
+    if hasattr(orchestrator, 'session_manager'):
+        stats = orchestrator.session_manager.get_session_stats()
+        col1, col2 = st.sidebar.columns(2)
+        
+        with col1:
+            st.metric("Queries", stats.get('queries_sent', 0))
+        
+        with col2:
+            duration_min = stats.get('session_duration', 0) / 60
+            st.metric("Duration", f"{duration_min:.1f}m")
+    
     return use_context, show_technical_details
 
 def render_message(message: Dict[str, Any], show_technical: bool = False):
@@ -351,6 +378,12 @@ def render_example_queries():
                     'content': example['query'],
                     'timestamp': datetime.now()
                 })
+                
+                # Log example query
+                if hasattr(st.session_state, 'session_id'):
+                    # This will be processed in the main chat input handler
+                    pass
+                
                 st.rerun()
 
 def main():
@@ -391,6 +424,12 @@ def main():
         }
         st.session_state.messages.append(user_message)
         
+        # Log user query with session manager
+        orchestrator.session_manager.log_query(prompt, {
+            'session_id': st.session_state.session_id,
+            'use_context': use_context
+        })
+        
         # Display user message immediately
         with st.chat_message("user"):
             st.write(prompt)
@@ -404,6 +443,16 @@ def main():
                 response = result['response']
                 st.write(response)
                 
+                # Log response with session manager
+                orchestrator.session_manager.log_response(response, {
+                    'session_id': result.get('session_id', st.session_state.session_id),
+                    'response_time': result.get('response_time', 0),
+                    'confidence': result.get('confidence', 0),
+                    'model_used': result.get('model_used', 'unknown'),
+                    'context_used': result.get('context_used', False),
+                    'routing_info': result.get('routing_info', {})
+                })
+                
                 # Add assistant message with metadata
                 assistant_message = {
                     'role': 'assistant',
@@ -415,6 +464,7 @@ def main():
                         'model_used': result.get('model_used', 'unknown'),
                         'context_used': result.get('context_used', False),
                         'sources': result.get('sources', []),
+                        'session_id': result.get('session_id'),
                         'routing_info': result.get('routing_info', {})
                     }
                 }
@@ -444,6 +494,13 @@ def main():
             else:
                 error_message = f"❌ Error: {result['error']}"
                 st.error(error_message)
+                
+                # Log error with session manager
+                orchestrator.session_manager.log_error(result['error'], {
+                    'session_id': st.session_state.session_id,
+                    'query': prompt,
+                    'response_time': result.get('response_time', 0)
+                })
                 
                 # Add error message
                 assistant_message = {

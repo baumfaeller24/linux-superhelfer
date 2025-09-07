@@ -1,0 +1,61 @@
+{
+  "session_id": "session_20250907_110337_b65ac151",
+  "date": "20250907",
+  "conversation_count": 3,
+  "conversations": [
+    {
+      "id": "conv_20250907_110337_a9b4163b",
+      "session_id": "session_20250907_110337_b65ac151",
+      "timestamp": "2025-09-07T11:03:37.027377",
+      "query": "What is Linux?",
+      "resolved_query": "",
+      "response": "Linux is an open-source operating system kernel originally created by Linus Torvalds in 1991. It forms the core of many operating system distributions.",
+      "model_used": "llama3.2:3b",
+      "confidence_score": 0.92,
+      "processing_time": 1.8,
+      "context_used": false,
+      "vram_usage": "",
+      "routing_decision": "",
+      "metadata": {
+        "query_number": 1,
+        "language_detected": "en"
+      }
+    },
+    {
+      "id": "conv_20250907_110337_b2ec3f7b",
+      "session_id": "session_20250907_110337_b65ac151",
+      "timestamp": "2025-09-07T11:03:37.127583",
+      "query": "How do I install software on Linux?",
+      "resolved_query": "",
+      "response": "You can install software on Linux using package managers like apt (Ubuntu/Debian), yum/dnf (Red Hat/Fedora), or pacman (Arch Linux). For example: sudo apt install package-name",
+      "model_used": "llama3.2:3b",
+      "confidence_score": 0.88,
+      "processing_time": 2.1,
+      "context_used": true,
+      "vram_usage": "",
+      "routing_decision": "",
+      "metadata": {
+        "query_number": 2,
+        "language_detected": "en"
+      }
+    },
+    {
+      "id": "conv_20250907_110337_32ad5c84",
+      "session_id": "session_20250907_110337_b65ac151",
+      "timestamp": "2025-09-07T11:03:37.227947",
+      "query": "ja, zeige mir ein beispiel mit apt",
+      "resolved_query": "",
+      "response": "Here's an example using apt: sudo apt update && sudo apt install firefox. This updates the package list and installs Firefox browser.",
+      "model_used": "llama3.2:3b",
+      "confidence_score": 0.75,
+      "processing_time": 2.4,
+      "context_used": true,
+      "vram_usage": "",
+      "routing_decision": "",
+      "metadata": {
+        "query_number": 3,
+        "language_detected": "de"
+      }
+    }
+  ]
+}

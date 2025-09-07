@@ -75,6 +75,7 @@ class InferRequest(BaseModel):
     context: Optional[str] = None
     enable_context_search: Optional[bool] = True
     context_threshold: Optional[float] = 0.6
+    session_id: Optional[str] = None  # Session ID for conversation context tracking
 
 
 class InferResponse(BaseModel):
@@ -90,6 +91,9 @@ class InferResponse(BaseModel):
     sources: Optional[list] = None
     routing_info: Optional[dict] = None
     vram_usage_percent: Optional[float] = None
+    session_id: str  # Session ID for conversation tracking
+    context_turns_used: int = 0  # Number of previous conversation turns used in context
+    context_enhanced: bool = False  # Whether query was enhanced with conversation context
 
 
 class ContextInferRequest(BaseModel):
@@ -98,6 +102,7 @@ class ContextInferRequest(BaseModel):
     top_k: Optional[int] = 3
     threshold: Optional[float] = 0.6
     max_context_length: Optional[int] = 2000
+    session_id: Optional[str] = None
 
 
 class ContextInferResponse(BaseModel):
@@ -113,6 +118,9 @@ class ContextInferResponse(BaseModel):
     sources: list
     context_snippets_count: int
     attribution: Optional[str] = None
+    session_id: str
+    context_turns_used: int = 0
+    context_enhanced: bool = False
 
 
 @app.get("/health", response_model=HealthStatus)
@@ -163,10 +171,40 @@ async def infer(request: InferRequest):
         # Preprocess query
         processed_query = query_processor.preprocess_query(request.query)
         
+        # Session management - handle session ID
+        current_session_id = request.session_id
+        if not current_session_id:
+            # Create new session if none provided
+            current_session_id = session_manager.create_session()
+            logger.info(f"Created new session: {current_session_id}")
+        else:
+            # Verify existing session or create if not found
+            session = session_manager.get_session(current_session_id)
+            if not session:
+                current_session_id = session_manager.create_session()
+                logger.info(f"Session {request.session_id} not found, created new: {current_session_id}")
+        
         # Initialize response tracking
         context_used = False
         sources = []
         final_query = processed_query
+        context_turns_used = 0
+        context_enhanced = False
+        
+        # Try to enhance with session context first (before RAG context)
+        try:
+            session_context = session_manager.get_context_for_query(current_session_id, processed_query)
+            if session_context:
+                # Enhance query with conversation context
+                final_query = session_manager.enhance_query_with_context(current_session_id, processed_query)
+                context_enhanced = True
+                # Count conversation turns used
+                session = session_manager.get_session(current_session_id)
+                if session:
+                    context_turns_used = min(len(session.turns), 5)  # Max 5 turns as per design
+                logger.info(f"Enhanced query with session context from {context_turns_used} conversation turns")
+        except Exception as e:
+            logger.warning(f"Session context enhancement failed, continuing: {e}")
         
         # Enhance with context if enabled and no explicit context provided
         if request.enable_context_search and not request.context:
@@ -250,7 +288,9 @@ async def infer(request: InferRequest):
         chat_logger.info(f"Model Used: {generation_result['model_used']}")
         chat_logger.info(f"Confidence Score: {confidence:.3f}")
         chat_logger.info(f"Processing Time: {processing_time:.2f}s")
-        chat_logger.info(f"Context Used: {context_used}")
+        chat_logger.info(f"Context Used: {context_used or context_enhanced}")
+        if context_enhanced:
+            chat_logger.info(f"Session Context: {context_turns_used} conversation turns used")
         chat_logger.info(f"VRAM Usage: {vram_usage:.1%}")
         if routing_info:
             chat_logger.info(f"Routing: {routing_info['selected_model']} model, complexity {routing_info['complexity_score']:.2f}")
@@ -259,6 +299,23 @@ async def infer(request: InferRequest):
         chat_logger.info("=" * 80)
         
         logger.info(f"Query processed with intelligent routing: model={generation_result['model_used']}, confidence={confidence:.3f}, time={processing_time:.2f}s")
+        
+        # Log conversation turn to session
+        try:
+            routing_decision = routing_info.get('reasoning', 'No routing info') if routing_info else 'No routing info'
+            complexity_score = routing_info.get('complexity_score', 0.0) if routing_info else 0.0
+            
+            session_manager.add_conversation_turn(
+                session_id=current_session_id,
+                query=processed_query,
+                response=generation_result['response'],
+                model_used=generation_result['model_used'],
+                complexity_score=complexity_score,
+                routing_decision=routing_decision
+            )
+            logger.info(f"Added conversation turn to session {current_session_id}")
+        except Exception as e:
+            logger.warning(f"Failed to log conversation turn to session: {e}")
         
         return InferResponse(
             response=generation_result['response'],
@@ -269,7 +326,10 @@ async def infer(request: InferRequest):
             context_used=context_used,
             sources=sources if sources else None,
             routing_info=routing_info,
-            vram_usage_percent=vram_usage
+            vram_usage_percent=vram_usage,
+            session_id=current_session_id,
+            context_turns_used=context_turns_used,
+            context_enhanced=context_enhanced
         )
         
     except HTTPException:

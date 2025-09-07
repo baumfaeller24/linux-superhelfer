@@ -1,0 +1,32 @@
+{
+  "session_id": "session_1757259176",
+  "created_at": "2025-09-07T17:43:00.709743",
+  "interactions": [
+    {
+      "session_id": "session_1757259176",
+      "timestamp": "2025-09-07T17:43:00.709664",
+      "interaction_type": "query_sent",
+      "data": {
+        "query": "\nSchreibe ein Bash-Skript, das einen Ordner (~/Projekte/) in ein Backup-Verzeichnis (~/Backups/) kopiert.\n\nDas Backup soll automatisch einen Zeitstempel im Namen haben (z. B. Projekte_2025-09-03_07-30.tar.gz).\n\nEs sollen nur die letzten 5 Backups behalten werden, \u00e4ltere Backups werden automatisch gel\u00f6scht.\n\nFalls der Zielordner nicht existiert, soll er automatisch angelegt werden.\n",
+        "metadata": {
+          "session_id": "session_1757259176",
+          "use_context": true
+        }
+      }
+    },
+    {
+      "session_id": "session_1757259176",
+      "timestamp": "2025-09-07T17:44:00.770530",
+      "interaction_type": "error_occurred",
+      "data": {
+        "error": "HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=60)",
+        "context": {
+          "session_id": "session_1757259176",
+          "query": "\nSchreibe ein Bash-Skript, das einen Ordner (~/Projekte/) in ein Backup-Verzeichnis (~/Backups/) kopiert.\n\nDas Backup soll automatisch einen Zeitstempel im Namen haben (z. B. Projekte_2025-09-03_07-30.tar.gz).\n\nEs sollen nur die letzten 5 Backups behalten werden, \u00e4ltere Backups werden automatisch gel\u00f6scht.\n\nFalls der Zielordner nicht existiert, soll er automatisch angelegt werden.\n",
+          "response_time": 60.05980849266052
+        }
+      }
+    }
+  ],
+  "last_updated": "2025-09-07T17:44:00.770530"
+}

@@ -46,7 +46,7 @@ class ModuleOrchestrator:
         
         return results
     
-    async def query_core_intelligence(self, query: str) -> QueryResponse:
+    async def query_core_intelligence(self, query: str, session_id: Optional[str] = None) -> QueryResponse:
         """Query Module A: Core Intelligence Engine."""
         start_time = time.time()
         
@@ -61,9 +61,14 @@ class ModuleOrchestrator:
                     error="Module A not configured"
                 )
             
+            # Prepare payload with optional session_id
+            payload = {"query": query, "enable_context_search": True}
+            if session_id:
+                payload["session_id"] = session_id
+            
             response = await self.client.post(
                 f"{url}/infer",
-                json={"query": query, "enable_context_search": True}
+                json=payload
             )
             
             processing_time = time.time() - start_time
@@ -234,7 +239,7 @@ class ModuleOrchestrator:
                 error=str(e)
             )
     
-    async def process_full_query(self, query: str) -> Dict[str, Any]:
+    async def process_full_query(self, query: str, session_id: Optional[str] = None) -> Dict[str, Any]:
         """Process a complete query through the system workflow."""
         results = {
             'query': query,
@@ -243,7 +248,7 @@ class ModuleOrchestrator:
         }
         
         # Step 1: Query Core Intelligence (A) with context from Knowledge Vault (B)
-        core_response = await self.query_core_intelligence(query)
+        core_response = await self.query_core_intelligence(query, session_id)
         results['steps'].append({
             'step': 'core_intelligence',
             'response': core_response

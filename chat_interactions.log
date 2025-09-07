@@ -25143,3 +25143,901 @@ Success: true
 
 [2025-09-07 01:45:33] QUERY END
 ================================================================================
+
+[2025-09-07 10:53:13] QUERY START (Intelligent Routing)
+User Query: "kannst du mir ein linux script schreiben, welches ein ganz simples spiel erzeugt?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 10:53:54] RESPONSE
+Model Response: "Ja, ich kann dir ein einfaches Linux-Script für ein Spiel schreiben. Hier ist ein simples "Zahlenratespiel" in Bash:
+
+```bash
+#!/bin/bash
+
+# Zahlenratespiel
+# Autor: Systemadministrator
+# Beschreibung..."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.650
+Processing Time: 40.18s
+Context Used: False
+VRAM Usage: 14.6%
+Routing: code model, complexity 0.15
+Success: true
+
+[2025-09-07 10:53:54] QUERY END
+================================================================================
+
+[2025-09-07 10:54:36] QUERY START (Intelligent Routing)
+User Query: "ja"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 10:55:07] QUERY START (Intelligent Routing)
+User Query: " ja setze deinen vorschlag um!"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 10:55:09] RESPONSE
+Model Response: "I'd be happy to help with setting up a new user account in Linux. Here's my suggestion:
+
+To create a new user account, we can use the `useradd` command. This command is used to add a new user account ..."
+Model Used: llama3.2:3b
+Confidence Score: 0.690
+Processing Time: 2.02s
+Context Used: False
+VRAM Usage: 24.0%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 10:55:09] QUERY END
+================================================================================
+
+[2025-09-07 11:38:27] QUERY START (Intelligent Routing)
+User Query: "Erkläre mir detailliert, wie Docker Container funktionieren
+
+"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 11:39:15] RESPONSE
+Model Response: "Docker-Container sind ein wichtiger Teil der containerisierten Computing-Technologie. Hier ist eine detaillierte Erklärung, wie Docker-Container funktionieren:
+
+**Was sind Docker-Containers?**
+
+Ein Do..."
+Model Used: llama3.2:3b
+Confidence Score: 0.620
+Processing Time: 48.91s
+Context Used: False
+VRAM Usage: 23.9%
+Routing: code model, complexity 0.40
+Success: true
+
+[2025-09-07 11:39:15] QUERY END
+================================================================================
+
+[2025-09-07 11:40:00] QUERY START (Intelligent Routing)
+User Query: "und wofür sind die gut?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 11:40:02] RESPONSE
+Model Response: "Die `und`-Kombination in Linux!
+
+In der Regel wird das `&&` (erwähnt wurden) und das `||` (oder) verwendet.
+
+*   `&&`: Dieser Operator verwendet, wenn ein Befehl erfolgreich ist (0), während des Befol..."
+Model Used: llama3.2:3b
+Confidence Score: 0.675
+Processing Time: 1.87s
+Context Used: False
+VRAM Usage: 23.9%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 11:40:02] QUERY END
+================================================================================
+
+[2025-09-07 12:23:09] QUERY START (Intelligent Routing)
+User Query: "was ist linux?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 12:23:12] RESPONSE
+Model Response: "Linux ist eine freie und open-source Betriebssystemsoftware, die von Linus Torvalds im Jahr 1991 entwickelt wurde. Es basiert auf der Konzepte des Unix-Systems und bietet eine Vielzahl von Funktionen ..."
+Model Used: llama3.2:3b
+Confidence Score: 0.660
+Processing Time: 2.86s
+Context Used: False
+VRAM Usage: 19.1%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 12:23:12] QUERY END
+================================================================================
+
+[2025-09-07 12:23:30] QUERY START (Intelligent Routing)
+User Query: "wer hat es erfunden?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 12:23:30] RESPONSE
+Model Response: "A question that takes me away from Linux!
+
+The origin of the "wer" command is a bit unclear, but it's believed to have been created by a group of users as a humorous response to the "who" command. The..."
+Model Used: llama3.2:3b
+Confidence Score: 0.625
+Processing Time: 0.47s
+Context Used: False
+VRAM Usage: 19.1%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 12:23:30] QUERY END
+================================================================================
+
+[2025-09-07 12:42:05] QUERY START (Intelligent Routing)
+User Query: "was ist linux?
+
+"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 12:42:07] RESPONSE
+Model Response: "Linux ist ein freies und Open-Source Betriebssystem, das von vielen verschiedenen Entwicklern und Unternehmen entwickelt wurde. Es basiert auf der Kernel-Architektur Unix und bietet eine Vielzahl von ..."
+Model Used: llama3.2:3b
+Confidence Score: 0.660
+Processing Time: 2.80s
+Context Used: False
+VRAM Usage: 19.1%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 12:42:07] QUERY END
+================================================================================
+
+[2025-09-07 12:42:21] QUERY START (Intelligent Routing)
+User Query: "wer hat es erfunden?
+
+"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 12:42:22] RESPONSE
+Model Response: "I think there's been a mix-up!
+
+"Wer hat es erfunden?" is a German phrase that translates to "Who invented it?"
+
+However, I believe you might be referring to the Linux distribution itself. Linux was c..."
+Model Used: llama3.2:3b
+Confidence Score: 0.665
+Processing Time: 0.41s
+Context Used: False
+VRAM Usage: 19.1%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 12:42:22] QUERY END
+================================================================================
+
+[2025-09-07 13:47:34] QUERY START (Intelligent Routing)
+User Query: "schreibe ein skript um den anteil der vertschiedenen dateitypen am gesamtspeicherbedarf auf der festplatte tabellarisch auszugeben. sortierung von häufigen zu seltenen dateitypen."
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 13:48:19] QUERY START (Intelligent Routing)
+User Query: "schreibe ein skript um den anteil der vertschiedenen dateitypen am gesamtspeicherbedarf auf der festplatte tabellarisch auszugeben. sortierung von häufigen zu seltenen dateitypen."
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 13:48:24] RESPONSE
+Model Response: "A nice question!
+
+To create a script that displays the disk usage of different file types in a table, sorted from most frequent to least frequent, you can use the following script:
+```bash
+#!/bin/bash..."
+Model Used: llama3.2:3b
+Confidence Score: 0.650
+Processing Time: 49.14s
+Context Used: False
+VRAM Usage: 23.6%
+Routing: code model, complexity 0.10
+Success: true
+
+[2025-09-07 13:48:24] QUERY END
+================================================================================
+
+[2025-09-07 13:49:06] RESPONSE
+Model Response: "Eine interessante Aufgabe!
+
+Hier ist ein Skript, das den Anteil der verschiedenen Dateitypen an dem gesamten Speicherbedarf auf der Festplatte tabellarisch ausgibt:
+```bash
+#!/bin/bash
+
+# Liste der Da..."
+Model Used: llama3.2:3b
+Confidence Score: 0.650
+Processing Time: 46.90s
+Context Used: False
+VRAM Usage: 23.6%
+Routing: code model, complexity 0.10
+Success: true
+
+[2025-09-07 13:49:06] QUERY END
+================================================================================
+
+[2025-09-07 14:07:46] QUERY START (Intelligent Routing)
+User Query: "Ein Händler kauft 100 kg einer Getreidemischung, die aus Weizen und Gerste besteht. Der Preis pro Kilogramm Weizen beträgt 2,40 €, der Preis pro Kilogramm Gerste 1,60 €. Er verkauft die gesamte Mischung mit einem Aufschlag von 25 % auf seinen Einkaufspreis.
+Nach dem Verkauf bemerkt er jedoch, dass 20 kg der Mischung durch Feuchtigkeit verdorben sind und nur noch als Tierfutter zum halben Verkaufspreis pro Kilogramm verkauft werden können.
+
+Frage:
+Wie viel Kilogramm Weizen und wie viel Kilogramm Gerste waren in der Mischung, wenn der Gesamterlös des Händlers am Ende 228 € beträgt?
+
+Soll ich dir auch gleich den Lösungsweg dazu vorbereiten oder willst du die Aufgabe selbst durchrechnen?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 14:08:01] RESPONSE
+Model Response: "Ich sehe, dass Sie eine Mathematik-Aufgabe gestellt haben, die sich auf die Berechnung von Mengen in einer Getreidemischung bezieht. Diese Aufgabe ist jedoch nicht direkt mit Linux-Administration zu t..."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.644
+Processing Time: 15.69s
+Context Used: False
+VRAM Usage: 13.7%
+Routing: code model, complexity 0.45
+Success: true
+
+[2025-09-07 14:08:01] QUERY END
+================================================================================
+
+[2025-09-07 14:08:15] QUERY START (Intelligent Routing)
+User Query: "Ein Händler kauft 100 kg einer Getreidemischung, die aus Weizen und Gerste besteht. Der Preis pro Kilogramm Weizen beträgt 2,40 €, der Preis pro Kilogramm Gerste 1,60 €. Er verkauft die gesamte Mischung mit einem Aufschlag von 25 % auf seinen Einkaufspreis.
+Nach dem Verkauf bemerkt er jedoch, dass 20 kg der Mischung durch Feuchtigkeit verdorben sind und nur noch als Tierfutter zum halben Verkaufspreis pro Kilogramm verkauft werden können.
+
+Frage:
+Wie viel Kilogramm Weizen und wie viel Kilogramm Gerste waren in der Mischung, wenn der Gesamterlös des Händlers am Ende 228 € beträgt?
+
+Soll ich dir auch gleich den Lösungsweg dazu vorbereiten oder willst du die Aufgabe selbst durchrechnen?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 14:08:34] RESPONSE
+Model Response: "Ich kann diese Mathematik-Aufgabe nicht direkt als Linux-Systemadministrator beantworten, da es sich um eine reine Rechenaufgabe handelt. Allerdings kann ich dir helfen, wie du solche Aufgaben systema..."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.641
+Processing Time: 18.55s
+Context Used: False
+VRAM Usage: 13.7%
+Routing: code model, complexity 0.45
+Success: true
+
+[2025-09-07 14:08:34] QUERY END
+================================================================================
+
+[2025-09-07 14:09:01] QUERY START (Intelligent Routing)
+User Query: "ja, lösungsweg"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 14:09:03] RESPONSE
+Model Response: "It seems like you're asking "Can I help you?" in German!
+
+Ja, ich kann dir helfen! (Yes, I can help you!) What's on your mind? Do you have a specific Linux-related question or issue you'd like assista..."
+Model Used: llama3.2:3b
+Confidence Score: 0.788
+Processing Time: 1.52s
+Context Used: False
+VRAM Usage: 23.5%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 14:09:03] QUERY END
+================================================================================
+
+[2025-09-07 14:11:04] QUERY START (Intelligent Routing)
+User Query: "test"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: False
+
+[2025-09-07 14:11:11] RESPONSE
+Model Response: "Hello! It looks like you sent a quick "test?" message. 
+
+If you're testing whether I'm responsive, yes - I'm here and ready to help with Linux administration questions!
+
+If you have actual Linux-relat..."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.722
+Processing Time: 7.15s
+Context Used: False
+VRAM Usage: 23.6%
+Routing: code model, complexity 0.40
+Success: true
+
+[2025-09-07 14:11:11] QUERY END
+================================================================================
+
+[2025-09-07 17:29:12] QUERY START (Intelligent Routing)
+User Query: "was ist linux?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: False
+
+[2025-09-07 17:29:14] RESPONSE
+Model Response: "Linux ist ein freies und open-source Betriebssystem, das von vielen Entwicklern und Unternehmen weltweit entwickelt wurde. Es basiert auf der Konzepte der Unix-Systeme und bietet eine Vielzahl von Fun..."
+Model Used: llama3.2:3b
+Confidence Score: 0.688
+Processing Time: 1.77s
+Context Used: False
+VRAM Usage: 16.8%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 17:29:14] QUERY END
+================================================================================
+
+[2025-09-07 17:30:03] QUERY START (Intelligent Routing)
+User Query: "was ist linux?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: False
+
+[2025-09-07 17:30:04] RESPONSE
+Model Response: "Linux ist ein freies und Open-Source Betriebssystem, das auf den Kernel Linux basiert. Es wurde von Linus Torvalds im Jahr 1991 entwickelt und ist seitdem zu einem der beliebtesten Betriebssysteme für..."
+Model Used: llama3.2:3b
+Confidence Score: 0.655
+Processing Time: 0.88s
+Context Used: False
+VRAM Usage: 16.8%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 17:30:04] QUERY END
+================================================================================
+
+[2025-09-07 17:30:14] QUERY START (Intelligent Routing)
+User Query: "wer hat es erfunden?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: False
+
+[2025-09-07 17:30:33] RESPONSE
+Model Response: "Das Betriebssystem **Linux** wurde vom finnischen Studenten **Linus Torvalds** erstellt.
+
+**Wichtige Details:**
+- **Name:** Linus Torvalds
+- **Geburtsort:** Finnland
+- **Jahr:** 1991 (erste Version 0...."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.641
+Processing Time: 18.70s
+Context Used: False
+VRAM Usage: 21.5%
+Routing: code model, complexity 0.32
+Success: true
+
+[2025-09-07 17:30:33] QUERY END
+================================================================================
+
+[2025-09-07 17:32:10] QUERY START (Intelligent Routing)
+User Query: "was ist linux?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: False
+
+[2025-09-07 17:32:11] RESPONSE
+Model Response: "Linux ist ein kostenloses und Open-Source-Betriebssystem, das von der GNU Project (GNU's Not Unix) entwickelt wurde. Es basiert auf den Kernel-Komponenten des Unix-Systems, hat aber eine eigene Shell ..."
+Model Used: llama3.2:3b
+Confidence Score: 0.640
+Processing Time: 0.76s
+Context Used: False
+VRAM Usage: 21.5%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 17:32:11] QUERY END
+================================================================================
+
+[2025-09-07 17:32:21] QUERY START (Intelligent Routing)
+User Query: "wer hat es erfunden?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: False
+
+[2025-09-07 17:33:18] QUERY START (Intelligent Routing)
+User Query: "was ist linux?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 17:33:46] RESPONSE
+Model Response: "Linux wurde ursprünglich von Linus Torvalds erfunden. Er war ein finnischer Student an der Universität Helsinki, als er im Jahr 1991 mit der Entwicklung des Linux-Kernels begann. Zu diesem Zeitpunkt s..."
+Model Used: llama3.1:70b
+Confidence Score: 0.620
+Processing Time: 84.70s
+Context Used: True
+Session Context: 1 conversation turns used
+VRAM Usage: 96.8%
+Routing: heavy model, complexity 0.22
+Success: true
+
+[2025-09-07 17:33:46] QUERY END
+================================================================================
+
+[2025-09-07 17:33:51] RESPONSE
+Model Response: "Linux ist ein freies und open-source Betriebssystem, das von 1991 von Linus Torvalds entwickelt wurde. Es basiert auf den Kernkonzepten des Unix-Systems und bietet eine Vielzahl von Features wie Siche..."
+Model Used: llama3.2:3b
+Confidence Score: 0.620
+Processing Time: 32.90s
+Context Used: False
+VRAM Usage: 18.9%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 17:33:51] QUERY END
+================================================================================
+
+[2025-09-07 17:34:06] QUERY START (Intelligent Routing)
+User Query: "wer hat es erfunden?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: False
+
+[2025-09-07 17:34:56] RESPONSE
+Model Response: "Eine Wiederholungsfrage!
+
+Wie ich bereits erwähnt habe, wurde Linux ursprünglich von Linus Torvalds erfunden. Er war ein finnischer Student an der Universität Helsinki, als er im Jahr 1991 mit der Ent..."
+Model Used: llama3.1:70b
+Confidence Score: 0.669
+Processing Time: 49.95s
+Context Used: True
+Session Context: 2 conversation turns used
+VRAM Usage: 96.8%
+Routing: heavy model, complexity 0.27
+Success: true
+
+[2025-09-07 17:34:56] QUERY END
+================================================================================
+
+[2025-09-07 17:35:14] QUERY START (Intelligent Routing)
+User Query: "und wer hat es erfunden?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 17:35:18] RESPONSE
+Model Response: "I think you meant to ask "Who invented Linux?"
+
+The answer is a bit complex, as the development of Linux involved many individuals over several decades. However, the core creator and driving force beh..."
+Model Used: llama3.2:3b
+Confidence Score: 0.635
+Processing Time: 3.54s
+Context Used: False
+VRAM Usage: 16.6%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 17:35:18] QUERY END
+================================================================================
+
+[2025-09-07 17:40:27] QUERY START (Intelligent Routing)
+User Query: "Was ist Linux?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 17:40:29] RESPONSE
+Model Response: "Linux ist ein kostenloses und Open-Source-Betriebssystem, das von einer Vielzahl von Entwicklern und Unternehmen entwickelt wurde. Es basiert auf der UNIX-Plattform und bietet eine Vielzahl von Funkti..."
+Model Used: llama3.2:3b
+Confidence Score: 0.660
+Processing Time: 1.96s
+Context Used: False
+VRAM Usage: 16.6%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 17:40:29] QUERY END
+================================================================================
+
+[2025-09-07 17:40:29] QUERY START (Intelligent Routing)
+User Query: "Wer hat es erfunden?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 17:40:30] RESPONSE
+Model Response: "I think I can help with that!
+
+The term "Wer hat es erfunden?" (which translates to "Who invented it?") is actually a question from the popular Linux distribution Ubuntu. It's often displayed as part ..."
+Model Used: llama3.2:3b
+Confidence Score: 0.684
+Processing Time: 0.36s
+Context Used: False
+VRAM Usage: 16.6%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 17:40:30] QUERY END
+================================================================================
+
+[2025-09-07 17:43:00] QUERY START (Intelligent Routing)
+User Query: "
+Schreibe ein Bash-Skript, das einen Ordner (~/Projekte/) in ein Backup-Verzeichnis (~/Backups/) kopiert.
+
+Das Backup soll automatisch einen Zeitstempel im Namen haben (z. B. Projekte_2025-09-03_07-30.tar.gz).
+
+Es sollen nur die letzten 5 Backups behalten werden, ältere Backups werden automatisch gelöscht.
+
+Falls der Zielordner nicht existiert, soll er automatisch angelegt werden.
+"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 17:44:02] RESPONSE
+Model Response: "Here's a bash script that meets your requirements:
+
+```bash
+#!/bin/bash
+
+# Configuration
+SOURCE_DIR="$HOME/Projekte"
+BACKUP_DIR="$HOME/Backups"
+BACKUP_NAME="Projekte"
+MAX_BACKUPS=5
+
+# Create backup di..."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.585
+Processing Time: 61.54s
+Context Used: False
+VRAM Usage: 21.4%
+Routing: code model, complexity 0.23
+Success: true
+
+[2025-09-07 17:44:02] QUERY END
+================================================================================
+
+[2025-09-07 18:09:43] QUERY START (Intelligent Routing)
+User Query: "wer bist du?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 18:10:01] RESPONSE
+Model Response: "Ich bin ein KI-Assistent, der speziell für die Unterstützung bei Linux-Administrationsaufgaben entwickelt wurde. Ich kann dir bei folgenden Themen helfen:
+
+**Häufige Linux-Administrationsthemen:**
+- S..."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.658
+Processing Time: 17.39s
+Context Used: False
+VRAM Usage: 11.5%
+Routing: code model, complexity 0.40
+Success: true
+
+[2025-09-07 18:10:01] QUERY END
+================================================================================
+
+[2025-09-07 18:11:07] QUERY START (Intelligent Routing)
+User Query: "über was haben wir gerade gesprochen?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 18:11:45] RESPONSE
+Model Response: "Wir hatten gerade eine kurze Einführung, in der ich mich vorgestellt habe als ein KI-Assistent für Linux-Administrationsaufgaben. Es gab keine spezifische Frage oder ein bestimmtes Thema, über das wir..."
+Model Used: llama3.1:70b
+Confidence Score: 0.724
+Processing Time: 38.26s
+Context Used: True
+Session Context: 1 conversation turns used
+VRAM Usage: 96.7%
+Routing: heavy model, complexity 0.19
+Success: true
+
+[2025-09-07 18:11:45] QUERY END
+================================================================================
+
+[2025-09-07 18:24:54] QUERY START (Intelligent Routing)
+User Query: "Erstelle ein Bash-Skript, das die letzten 100 Zeilen aus /var/log/syslog einliest und überprüft, ob darin Wörter wie error, failed oder critical vorkommen.
+
+Wenn ja → soll eine rote Warnmeldung auf dem Bildschirm erscheinen.
+
+Optional: Schreibe die Treffer zusätzlich in eine Datei ~/log_alerts.txt.
+
+Bonus: Das Skript soll mit einem Argument starten, z. B. ./logcheck.sh 200, um die Anzahl der zu prüfenden Zeilen flexibel zu machen."
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 18:27:17] RESPONSE
+Model Response: "Das ist ein interessantes Anliegen!
+
+Hier ist ein Bash-Skript, das deine Anforderungen erfüllt:
+```bash
+#!/bin/bash
+
+# Standardwert für die Anzahl der zu prüfenden Zeilen
+DEFAULT_LINES=100
+
+# Überprüf..."
+Model Used: llama3.1:70b
+Confidence Score: 0.650
+Processing Time: 143.27s
+Context Used: True
+Session Context: 2 conversation turns used
+VRAM Usage: 96.7%
+Routing: heavy model, complexity 0.43
+Success: true
+
+[2025-09-07 18:27:17] QUERY END
+================================================================================
+
+[2025-09-07 18:30:07] QUERY START (Intelligent Routing)
+User Query: "Erstelle ein Bash-Skript, das die letzten 100 Zeilen aus /var/log/syslog einliest und überprüft, ob darin Wörter wie error, failed oder critical vorkommen.
+
+Wenn ja → soll eine rote Warnmeldung auf dem Bildschirm erscheinen.
+
+Optional: Schreibe die Treffer zusätzlich in eine Datei ~/log_alerts.txt.
+
+Bonus: Das Skript soll mit einem Argument starten, z. B. ./logcheck.sh 200, um die Anzahl der zu prüfenden Zeilen flexibel zu machen."
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 18:32:14] RESPONSE
+Model Response: "Hier ist das fertige Bash-Skript:
+```bash
+#!/bin/bash
+
+# Standardwert für die Anzahl der zu prüfenden Zeilen
+DEFAULT_LINES=100
+
+# Überprüfe, ob ein Argument angegeben wurde
+if [ $# -eq 1 ]; then
+    L..."
+Model Used: llama3.1:70b
+Confidence Score: 0.650
+Processing Time: 127.16s
+Context Used: True
+Session Context: 3 conversation turns used
+VRAM Usage: 96.8%
+Routing: heavy model, complexity 0.39
+Success: true
+
+[2025-09-07 18:32:14] QUERY END
+================================================================================
+
+[2025-09-07 18:32:48] QUERY START (Intelligent Routing)
+User Query: "Erstelle ein Bash-Skript, das alle 10 Sekunden die **CPU- und RAM-Auslastung** prüft.
+
+-   Wenn ein einzelner Prozess **mehr als 80% CPU** oder **mehr als 2 GB RAM** verbraucht, soll er automatisch beendet werden.
+    
+-   Vor dem Killen soll eine **Warnung mit Prozessname & PID** angezeigt werden.
+    
+-   Alle Aktionen sollen zusätzlich in `~/process_monitor.log` protokolliert werden.
+
+"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 18:33:48] QUERY START (Intelligent Routing)
+User Query: "> Schreibe ein Bash-Skript, das einen Ordner (`~/Projekte/`) in ein Backup-Verzeichnis (`~/Backups/`) kopiert.
+> 
+> -   Das Backup soll automatisch einen Zeitstempel im Namen haben (z. B. `Projekte_2025-09-03_07-30.tar.gz`).
+>     
+> -   Es sollen **nur die letzten 5 Backups behalten** werden, ältere Backups werden automatisch gelöscht.
+>     
+> -   Falls der Zielordner nicht existiert, soll er automatisch angelegt werden.
+>
+
+"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 18:35:35] RESPONSE
+Model Response: "Ein weiteres interessantes Anliegen!
+
+Hier ist ein Bash-Skript, das deine Anforderungen erfüllt:
+```bash
+#!/bin/bash
+
+# Konfiguration
+CPU_THRESHOLD=80
+RAM_THRESHOLD=2GB
+LOG_FILE=~/process_monitor.log
+..."
+Model Used: llama3.1:70b
+Confidence Score: 0.650
+Processing Time: 166.98s
+Context Used: True
+Session Context: 4 conversation turns used
+VRAM Usage: 96.8%
+Routing: heavy model, complexity 0.39
+Success: true
+
+[2025-09-07 18:35:35] QUERY END
+================================================================================
+
+[2025-09-07 18:37:18] RESPONSE
+Model Response: "Ein Backup-Skript!
+
+Hier ist ein Bash-Skript, das deine Anforderungen erfüllt:
+```bash
+#!/bin/bash
+
+# Quell- und Zielverzeichnisse
+SOURCE_DIR=~/Projekte/
+BACKUP_DIR=~/Backups/
+
+# Erstelle das Zielverz..."
+Model Used: llama3.1:70b
+Confidence Score: 0.650
+Processing Time: 210.01s
+Context Used: True
+Session Context: 4 conversation turns used
+VRAM Usage: 96.8%
+Routing: heavy model, complexity 0.37
+Success: true
+
+[2025-09-07 18:37:18] QUERY END
+================================================================================
+
+[2025-09-07 18:40:40] QUERY START (Intelligent Routing)
+User Query: "> Schreibe ein Bash-Skript, das einen Ordner (`~/Projekte/`) in ein Backup-Verzeichnis (`~/Backups/`) kopiert.
+> 
+> -   Das Backup soll automatisch einen Zeitstempel im Namen haben (z. B. `Projekte_2025-09-03_07-30.tar.gz`).
+>     
+> -   Es sollen **nur die letzten 5 Backups behalten** werden, ältere Backups werden automatisch gelöscht.
+>     
+> -   Falls der Zielordner nicht existiert, soll er automatisch angelegt werden.
+>
+
+"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 18:41:20] RESPONSE
+Model Response: "Hier ist ein Bash-Skript, das deine Anforderungen erfüllt:
+
+```bash
+#!/bin/bash
+
+# Konfiguration
+SOURCE_DIR="$HOME/Projekte"
+BACKUP_DIR="$HOME/Backups"
+MAX_BACKUPS=5
+
+# Zielordner erstellen, falls nic..."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.650
+Processing Time: 40.22s
+Context Used: False
+VRAM Usage: 11.4%
+Routing: code model, complexity 0.30
+Success: true
+
+[2025-09-07 18:41:20] QUERY END
+================================================================================
+
+[2025-09-07 18:41:56] QUERY START (Intelligent Routing)
+User Query: "könntest du auch ein kleines spiel schreiben?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 18:42:21] RESPONSE
+Model Response: "Ja, gerne! Hier ist ein einfaches Textbasiertes Spiel in Bash - ein "Rate das Zahl" Spiel:
+
+```bash
+#!/bin/bash
+
+# Rate die Zahl - Ein simples Spiel
+echo "Willkommen zum Rate-die-Zahl-Spiel!"
+echo "Ic..."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.665
+Processing Time: 25.05s
+Context Used: True
+Session Context: 1 conversation turns used
+VRAM Usage: 11.5%
+Routing: code model, complexity 0.34
+Success: true
+
+[2025-09-07 18:42:21] QUERY END
+================================================================================
+
+[2025-09-07 18:45:50] QUERY START (Intelligent Routing)
+User Query: "könntest du ein script für dieses alte pingpong spiel schreiben, wo sich links und rechts ein balken befindet. ein balken wird durch die ki genutzt der andere balken durch den anwender"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 18:47:26] RESPONSE
+Model Response: "# PingPong Spiel in Bash
+
+Hier ist ein einfaches PingPong-Spiel in Bash, bei dem du mit der Tastatur steuerst und eine KI deinen Gegner spielt:
+
+```bash
+#!/bin/bash
+
+# PingPong Spiel in Bash
+# Steueru..."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.585
+Processing Time: 96.02s
+Context Used: True
+Session Context: 2 conversation turns used
+VRAM Usage: 11.5%
+Routing: code model, complexity 0.51
+Success: true
+
+[2025-09-07 18:47:26] QUERY END
+================================================================================
+
+[2025-09-07 18:51:01] QUERY START (Intelligent Routing)
+User Query: "Was ist Linux?"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 18:51:03] RESPONSE
+Model Response: "Linux ist ein freies und Open-Source Betriebssystem, das von der GNU Project entwickelt wurde. Es basiert auf den Werkzeugen und Bibliotheken des Unix-Betriebssystems und bietet eine Vielzahl von Funk..."
+Model Used: llama3.2:3b
+Confidence Score: 0.726
+Processing Time: 1.97s
+Context Used: False
+VRAM Usage: 21.5%
+Routing: fast model, complexity 0.00
+Success: true
+
+[2025-09-07 18:51:03] QUERY END
+================================================================================
+
+[2025-09-07 18:51:22] QUERY START (Intelligent Routing)
+User Query: "Schreibe ein komplettes Python-Spiel: Snake mit pygame, vollständig kommentiert mit Menü, Highscore und Sound-Effekten"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 18:55:40] RESPONSE
+Model Response: "# Snake Spiel mit pygame
+
+Hier ist ein vollständiges Snake-Spiel mit Menü, Highscore und Sound-Effekten:
+
+```python
+import pygame
+import sys
+import random
+import os
+
+# Initialisierung von pygame
+pygam..."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.572
+Processing Time: 257.81s
+Context Used: False
+VRAM Usage: 21.5%
+Routing: code model, complexity 0.14
+Success: true
+
+[2025-09-07 18:55:40] QUERY END
+================================================================================
+
+[2025-09-07 19:00:30] QUERY START (Intelligent Routing)
+User Query: "Schreibe ein einfaches Bash-Skript für Backup"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
+
+[2025-09-07 19:00:55] RESPONSE
+Model Response: "Here's a simple bash script for creating backups:
+
+```bash
+#!/bin/bash
+
+# Simple backup script
+# Usage: ./backup.sh [source_directory] [destination_directory]
+
+# Set default values
+SOURCE_DIR="${1:-/h..."
+Model Used: qwen3-coder-30b-local
+Confidence Score: 0.665
+Processing Time: 24.90s
+Context Used: False
+VRAM Usage: 11.5%
+Routing: code model, complexity 0.33
+Success: true
+
+[2025-09-07 19:00:55] QUERY END
+================================================================================
+
+[2025-09-07 19:02:39] QUERY START (Intelligent Routing)
+User Query: "könntest du ein script für dieses alte pingpong spiel schreiben, wo sich links und rechts ein balken befindet. ein balken wird durch die ki genutzt der andere balken durch den anwender
+
+"
+Module: A (Core Intelligence with Model Router)
+Context Search Enabled: True
