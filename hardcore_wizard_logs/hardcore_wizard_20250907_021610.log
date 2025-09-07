@@ -1,0 +1,380 @@
+2025-09-07 02:16:10,873 [INFO] hardcore_wizard: 🔥🧙‍♂️ HARDCORE LINUX WIZARD TRAINING INITIATED!
+2025-09-07 02:16:10,873 [INFO] hardcore_wizard: Configuration: {
+  "max_cycles": 1000,
+  "cycle_interval_sec": 30,
+  "parallel_modules": 8,
+  "module_timeout_sec": 10,
+  "stop_at_hour": 7,
+  "max_hours": 12,
+  "max_errors": 100,
+  "log_max_mb": 100,
+  "log_backups": 10,
+  "seed": 1337,
+  "stress_mode": true,
+  "chaos_engineering": false,
+  "adaptive_difficulty": true,
+  "memory_pressure": true,
+  "cpu_pressure": true,
+  "failure_injection": true,
+  "crisis_scenarios": true,
+  "performance_benchmarks": true,
+  "hardcore_multiplier": 1.5,
+  "description": "Standard Hardcore Training"
+}
+2025-09-07 02:16:10,873 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 1 | Stress: 1.00x
+2025-09-07 02:16:11,275 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Database corruption under load
+2025-09-07 02:16:11,575 [INFO] hardcore_wizard: 🔥 Cycle 1 COMPLETE | Level: Hardcore Beginner | Success: 9/10 | Errors: 1 | Stress: 1.00x | Time: 0.70s | Points: 570
+2025-09-07 02:16:36,373 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 2 | Stress: 1.00x
+2025-09-07 02:16:36,373 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.90
+2025-09-07 02:16:37,004 [ERROR] hardcore_wizard: 💥 distributed_systems FAILED: Distributed Systems failed under hardcore conditions
+2025-09-07 02:16:37,095 [INFO] hardcore_wizard: 🔥 Cycle 2 COMPLETE | Level: Hardcore Beginner | Success: 9/10 | Errors: 1 | Stress: 0.90x | Time: 0.72s | Points: 1114
+2025-09-07 02:17:12,042 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 3 | Stress: 0.90x
+2025-09-07 02:17:12,042 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.81
+2025-09-07 02:17:12,124 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 810 log files simultaneously
+2025-09-07 02:17:12,692 [INFO] hardcore_wizard: 🔥 Cycle 3 COMPLETE | Level: Hardcore Beginner | Success: 9/10 | Errors: 1 | Stress: 0.81x | Time: 0.65s | Points: 1592
+2025-09-07 02:17:50,501 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 4 | Stress: 0.81x
+2025-09-07 02:17:50,502 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.73
+2025-09-07 02:17:51,089 [INFO] hardcore_wizard: 🔥 Cycle 4 COMPLETE | Level: Hardcore Beginner | Success: 10/10 | Errors: 0 | Stress: 0.73x | Time: 0.59s | Points: 2016
+2025-09-07 02:18:33,214 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 5 | Stress: 0.73x
+2025-09-07 02:18:33,215 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.66
+2025-09-07 02:18:33,347 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Mass service failure recovery
+2025-09-07 02:18:33,347 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Process 328 concurrent network connections
+2025-09-07 02:18:33,644 [INFO] hardcore_wizard: 🔥 Cycle 5 COMPLETE | Level: Hardcore Beginner | Success: 8/10 | Errors: 2 | Stress: 0.66x | Time: 0.43s | Points: 2355
+2025-09-07 02:19:27,292 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 6 | Stress: 0.66x
+2025-09-07 02:19:27,292 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.59
+2025-09-07 02:19:27,768 [INFO] hardcore_wizard: 🔥 Cycle 6 COMPLETE | Level: Hardcore Beginner | Success: 10/10 | Errors: 0 | Stress: 0.59x | Time: 0.48s | Points: 2730
+2025-09-07 02:20:23,937 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 7 | Stress: 0.59x
+2025-09-07 02:20:23,937 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.53
+2025-09-07 02:20:24,087 [ERROR] hardcore_wizard: 💥 container_chaos FAILED: Container Chaos failed under hardcore conditions
+2025-09-07 02:20:24,366 [INFO] hardcore_wizard: 🔥 Cycle 7 COMPLETE | Level: Hardcore Beginner | Success: 9/10 | Errors: 1 | Stress: 0.53x | Time: 0.43s | Points: 3048
+2025-09-07 02:21:12,829 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 8 | Stress: 0.53x
+2025-09-07 02:21:12,829 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:21:12,929 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Process 250 concurrent network connections
+2025-09-07 02:21:13,230 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Resource exhaustion mitigation
+2025-09-07 02:21:13,231 [INFO] hardcore_wizard: 🔥 Cycle 8 COMPLETE | Level: Hardcore Beginner | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.40s | Points: 3308
+2025-09-07 02:22:07,099 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 9 | Stress: 0.50x
+2025-09-07 02:22:07,099 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:22:07,301 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Database corruption under load
+2025-09-07 02:22:07,451 [INFO] hardcore_wizard: 🔥 Cycle 9 COMPLETE | Level: Hardcore Beginner | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.35s | Points: 3593
+2025-09-07 02:23:17,431 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 10 | Stress: 0.50x
+2025-09-07 02:23:17,431 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:23:17,532 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Process 250 concurrent network connections
+2025-09-07 02:23:17,732 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Security breach containment
+2025-09-07 02:23:17,758 [INFO] hardcore_wizard: 🔥 Cycle 10 COMPLETE | Level: Hardcore Beginner | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.33s | Points: 3853
+2025-09-07 02:24:24,822 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 11 | Stress: 0.50x
+2025-09-07 02:24:24,822 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:24:25,023 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Database corruption under load
+2025-09-07 02:24:25,174 [INFO] hardcore_wizard: 🔥 Cycle 11 COMPLETE | Level: Hardcore Beginner | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.35s | Points: 4108
+2025-09-07 02:25:21,102 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 12 | Stress: 0.50x
+2025-09-07 02:25:21,102 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:25:21,253 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Monitor 50 system processes in real-time
+2025-09-07 02:25:21,303 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Database corruption under load
+2025-09-07 02:25:21,455 [INFO] hardcore_wizard: 🔥 Cycle 12 COMPLETE | Level: Hardcore Beginner | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.35s | Points: 4338
+2025-09-07 02:26:16,186 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 13 | Stress: 0.50x
+2025-09-07 02:26:16,186 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:26:16,288 [ERROR] hardcore_wizard: 💥 extreme_shell_scripting FAILED: Extreme Shell Scripting failed under hardcore conditions
+2025-09-07 02:26:16,338 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Monitor 50 system processes in real-time
+2025-09-07 02:26:16,592 [INFO] hardcore_wizard: 🔥 Cycle 13 COMPLETE | Level: Hardcore Beginner | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.40s | Points: 4585
+2025-09-07 02:27:20,838 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 14 | Stress: 0.50x
+2025-09-07 02:27:20,838 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:27:20,889 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 500 log files simultaneously
+2025-09-07 02:27:21,041 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Database corruption under load
+2025-09-07 02:27:21,165 [INFO] hardcore_wizard: 🔥 Cycle 14 COMPLETE | Level: Hardcore Beginner | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.33s | Points: 4815
+2025-09-07 02:28:27,384 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 15 | Stress: 0.50x
+2025-09-07 02:28:27,384 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:28:27,685 [ERROR] hardcore_wizard: 💥 kernel_hacking FAILED: Kernel Hacking failed under hardcore conditions
+2025-09-07 02:28:27,786 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Resource exhaustion mitigation
+2025-09-07 02:28:27,787 [INFO] hardcore_wizard: 🔥 Cycle 15 COMPLETE | Level: Hardcore Beginner | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.40s | Points: 5080
+2025-09-07 02:29:25,418 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 16 | Stress: 0.50x
+2025-09-07 02:29:25,418 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:29:25,478 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 500 log files simultaneously
+2025-09-07 02:29:25,755 [ERROR] hardcore_wizard: 💥 distributed_systems FAILED: Distributed Systems failed under hardcore conditions
+2025-09-07 02:29:25,832 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Resource exhaustion mitigation
+2025-09-07 02:29:25,832 [INFO] hardcore_wizard: 🔥 Cycle 16 COMPLETE | Level: Hardcore Beginner | Success: 7/10 | Errors: 3 | Stress: 0.50x | Time: 0.41s | Points: 5290
+2025-09-07 02:30:19,359 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 17 | Stress: 0.50x
+2025-09-07 02:30:19,359 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:30:19,511 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Monitor 50 system processes in real-time
+2025-09-07 02:30:19,662 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Security breach containment
+2025-09-07 02:30:19,712 [INFO] hardcore_wizard: 🔥 Cycle 17 COMPLETE | Level: Hardcore Beginner | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.35s | Points: 5550
+2025-09-07 02:31:29,315 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 18 | Stress: 0.50x
+2025-09-07 02:31:29,315 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:31:29,416 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Mass service failure recovery
+2025-09-07 02:31:29,416 [ERROR] hardcore_wizard: 💥 extreme_shell_scripting FAILED: Extreme Shell Scripting failed under hardcore conditions
+2025-09-07 02:31:29,643 [INFO] hardcore_wizard: 🔥 Cycle 18 COMPLETE | Level: Hardcore Beginner | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.33s | Points: 5815
+2025-09-07 02:32:37,692 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 19 | Stress: 0.50x
+2025-09-07 02:32:37,692 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:32:37,793 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Process 250 concurrent network connections
+2025-09-07 02:32:38,095 [INFO] hardcore_wizard: 🔥 Cycle 19 COMPLETE | Level: Hardcore Beginner | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 6112
+2025-09-07 02:33:26,928 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 20 | Stress: 0.50x
+2025-09-07 02:33:26,929 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:33:27,332 [INFO] hardcore_wizard: 🔥 Cycle 20 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 6374
+2025-09-07 02:34:25,170 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 21 | Stress: 0.50x
+2025-09-07 02:34:25,170 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:34:25,271 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Mass service failure recovery
+2025-09-07 02:34:25,507 [INFO] hardcore_wizard: 🔥 Cycle 21 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.33s | Points: 6629
+2025-09-07 02:35:29,286 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 22 | Stress: 0.50x
+2025-09-07 02:35:29,286 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:35:29,688 [INFO] hardcore_wizard: 🔥 Cycle 22 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 6921
+2025-09-07 02:36:19,048 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 23 | Stress: 0.50x
+2025-09-07 02:36:19,048 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:36:19,109 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 500 log files simultaneously
+2025-09-07 02:36:19,463 [INFO] hardcore_wizard: 🔥 Cycle 23 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.41s | Points: 7218
+2025-09-07 02:37:08,274 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 24 | Stress: 0.50x
+2025-09-07 02:37:08,274 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:37:08,575 [ERROR] hardcore_wizard: 💥 kernel_hacking FAILED: Kernel Hacking failed under hardcore conditions
+2025-09-07 02:37:08,678 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Resource exhaustion mitigation
+2025-09-07 02:37:08,679 [INFO] hardcore_wizard: 🔥 Cycle 24 COMPLETE | Level: Stress Warrior | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.41s | Points: 7483
+2025-09-07 02:38:03,579 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 25 | Stress: 0.50x
+2025-09-07 02:38:03,579 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:38:03,679 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Mass service failure recovery
+2025-09-07 02:38:03,680 [ERROR] hardcore_wizard: 💥 extreme_shell_scripting FAILED: Extreme Shell Scripting failed under hardcore conditions
+2025-09-07 02:38:03,680 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Process 250 concurrent network connections
+2025-09-07 02:38:03,906 [INFO] hardcore_wizard: 🔥 Cycle 25 COMPLETE | Level: Stress Warrior | Success: 7/10 | Errors: 3 | Stress: 0.50x | Time: 0.33s | Points: 7693
+2025-09-07 02:39:06,272 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 26 | Stress: 0.50x
+2025-09-07 02:39:06,272 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:39:06,674 [INFO] hardcore_wizard: 🔥 Cycle 26 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 8015
+2025-09-07 02:39:58,162 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 27 | Stress: 0.50x
+2025-09-07 02:39:58,162 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:39:58,466 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Security breach containment
+2025-09-07 02:39:58,516 [INFO] hardcore_wizard: 🔥 Cycle 27 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.35s | Points: 8300
+2025-09-07 02:41:08,199 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 28 | Stress: 0.50x
+2025-09-07 02:41:08,200 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:41:08,351 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Monitor 50 system processes in real-time
+2025-09-07 02:41:08,501 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Security breach containment
+2025-09-07 02:41:08,552 [ERROR] hardcore_wizard: 💥 distributed_systems FAILED: Distributed Systems failed under hardcore conditions
+2025-09-07 02:41:08,552 [INFO] hardcore_wizard: 🔥 Cycle 28 COMPLETE | Level: Stress Warrior | Success: 7/10 | Errors: 3 | Stress: 0.50x | Time: 0.35s | Points: 8480
+2025-09-07 02:42:08,994 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 29 | Stress: 0.50x
+2025-09-07 02:42:08,994 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:42:09,146 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Monitor 50 system processes in real-time
+2025-09-07 02:42:09,396 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Resource exhaustion mitigation
+2025-09-07 02:42:09,397 [INFO] hardcore_wizard: 🔥 Cycle 29 COMPLETE | Level: Stress Warrior | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.40s | Points: 8710
+2025-09-07 02:43:01,027 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 30 | Stress: 0.50x
+2025-09-07 02:43:01,027 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:43:01,078 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 500 log files simultaneously
+2025-09-07 02:43:01,128 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Mass service failure recovery
+2025-09-07 02:43:01,355 [INFO] hardcore_wizard: 🔥 Cycle 30 COMPLETE | Level: Stress Warrior | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.33s | Points: 8970
+2025-09-07 02:43:56,793 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 31 | Stress: 0.50x
+2025-09-07 02:43:56,793 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:43:57,196 [INFO] hardcore_wizard: 🔥 Cycle 31 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 9292
+2025-09-07 02:44:48,406 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 32 | Stress: 0.50x
+2025-09-07 02:44:48,406 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:44:48,809 [INFO] hardcore_wizard: 🔥 Cycle 32 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 9614
+2025-09-07 02:45:49,712 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 33 | Stress: 0.50x
+2025-09-07 02:45:49,713 [CRITICAL] hardcore_wizard: 🚨 CRISIS SCENARIO ACTIVATED: database_corruption
+2025-09-07 02:45:49,713 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:45:49,713 [INFO] hardcore_wizard: ✅ Crisis scenario 'database_corruption' survived in 0.0s!
+2025-09-07 02:45:50,115 [INFO] hardcore_wizard: 🔥 Cycle 33 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 9986
+2025-09-07 02:46:45,259 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 34 | Stress: 0.50x
+2025-09-07 02:46:45,259 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:46:45,610 [ERROR] hardcore_wizard: 💥 distributed_systems FAILED: Distributed Systems failed under hardcore conditions
+2025-09-07 02:46:45,665 [INFO] hardcore_wizard: 🔥 Cycle 34 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 10288
+2025-09-07 02:47:42,127 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 35 | Stress: 0.50x
+2025-09-07 02:47:42,127 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:47:42,328 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Database corruption under load
+2025-09-07 02:47:42,479 [INFO] hardcore_wizard: 🔥 Cycle 35 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.35s | Points: 10573
+2025-09-07 02:48:31,063 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 36 | Stress: 0.50x
+2025-09-07 02:48:31,063 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:48:31,366 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Security breach containment
+2025-09-07 02:48:31,415 [INFO] hardcore_wizard: 🔥 Cycle 36 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.35s | Points: 10828
+2025-09-07 02:49:24,557 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 37 | Stress: 0.50x
+2025-09-07 02:49:24,557 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:49:24,733 [ERROR] hardcore_wizard: 💥 network_warfare FAILED: Network Warfare failed under hardcore conditions
+2025-09-07 02:49:24,759 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Database corruption under load
+2025-09-07 02:49:24,909 [INFO] hardcore_wizard: 🔥 Cycle 37 COMPLETE | Level: Stress Warrior | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.35s | Points: 11063
+2025-09-07 02:50:25,359 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 38 | Stress: 0.50x
+2025-09-07 02:50:25,359 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:50:25,500 [ERROR] hardcore_wizard: 💥 container_chaos FAILED: Container Chaos failed under hardcore conditions
+2025-09-07 02:50:25,764 [INFO] hardcore_wizard: 🔥 Cycle 38 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 11335
+2025-09-07 02:51:15,604 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 39 | Stress: 0.50x
+2025-09-07 02:51:15,604 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:51:15,907 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Security breach containment
+2025-09-07 02:51:15,957 [INFO] hardcore_wizard: 🔥 Cycle 39 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.35s | Points: 11620
+2025-09-07 02:52:27,131 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 40 | Stress: 0.50x
+2025-09-07 02:52:27,132 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:52:27,307 [ERROR] hardcore_wizard: 💥 network_warfare FAILED: Network Warfare failed under hardcore conditions
+2025-09-07 02:52:27,536 [INFO] hardcore_wizard: 🔥 Cycle 40 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 11892
+2025-09-07 02:53:30,575 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 41 | Stress: 0.50x
+2025-09-07 02:53:30,575 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:53:30,877 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Security breach containment
+2025-09-07 02:53:30,928 [INFO] hardcore_wizard: 🔥 Cycle 41 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.35s | Points: 12177
+2025-09-07 02:54:30,881 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 42 | Stress: 0.50x
+2025-09-07 02:54:30,881 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:54:31,022 [ERROR] hardcore_wizard: 💥 container_chaos FAILED: Container Chaos failed under hardcore conditions
+2025-09-07 02:54:31,286 [INFO] hardcore_wizard: 🔥 Cycle 42 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 12479
+2025-09-07 02:55:30,911 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 43 | Stress: 0.50x
+2025-09-07 02:55:30,911 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:55:31,315 [INFO] hardcore_wizard: 🔥 Cycle 43 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 12771
+2025-09-07 02:56:32,007 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 44 | Stress: 0.50x
+2025-09-07 02:56:32,007 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:56:32,108 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Mass service failure recovery
+2025-09-07 02:56:32,334 [INFO] hardcore_wizard: 🔥 Cycle 44 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.33s | Points: 13056
+2025-09-07 02:57:23,626 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 45 | Stress: 0.50x
+2025-09-07 02:57:23,626 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:57:24,028 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Resource exhaustion mitigation
+2025-09-07 02:57:24,029 [INFO] hardcore_wizard: 🔥 Cycle 45 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 13311
+2025-09-07 02:58:29,396 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 46 | Stress: 0.50x
+2025-09-07 02:58:29,396 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:58:29,497 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Process 250 concurrent network connections
+2025-09-07 02:58:29,799 [INFO] hardcore_wizard: 🔥 Cycle 46 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 13608
+2025-09-07 02:59:28,231 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 47 | Stress: 0.50x
+2025-09-07 02:59:28,231 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 02:59:28,634 [INFO] hardcore_wizard: 🔥 Cycle 47 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 13930
+2025-09-07 03:00:40,332 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 48 | Stress: 0.50x
+2025-09-07 03:00:40,332 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:00:40,635 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Security breach containment
+2025-09-07 03:00:40,685 [ERROR] hardcore_wizard: 💥 distributed_systems FAILED: Distributed Systems failed under hardcore conditions
+2025-09-07 03:00:40,685 [INFO] hardcore_wizard: 🔥 Cycle 48 COMPLETE | Level: Stress Warrior | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.35s | Points: 14195
+2025-09-07 03:01:43,440 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 49 | Stress: 0.50x
+2025-09-07 03:01:43,440 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:01:43,843 [INFO] hardcore_wizard: 🔥 Cycle 49 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 14517
+2025-09-07 03:02:40,844 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 50 | Stress: 0.50x
+2025-09-07 03:02:40,845 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:02:40,895 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 500 log files simultaneously
+2025-09-07 03:02:41,247 [INFO] hardcore_wizard: 🔥 Cycle 50 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 14814
+2025-09-07 03:03:50,970 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 51 | Stress: 0.50x
+2025-09-07 03:03:50,970 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:03:51,121 [ERROR] hardcore_wizard: 💥 chaos_troubleshooting FAILED: Chaos Troubleshooting failed under hardcore conditions
+2025-09-07 03:03:51,271 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Security breach containment
+2025-09-07 03:03:51,322 [INFO] hardcore_wizard: 🔥 Cycle 51 COMPLETE | Level: Stress Warrior | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.35s | Points: 15079
+2025-09-07 03:04:46,395 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 52 | Stress: 0.50x
+2025-09-07 03:04:46,395 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:04:46,445 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 500 log files simultaneously
+2025-09-07 03:04:46,699 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Security breach containment
+2025-09-07 03:04:46,722 [INFO] hardcore_wizard: 🔥 Cycle 52 COMPLETE | Level: Stress Warrior | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.33s | Points: 15309
+2025-09-07 03:05:39,077 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 53 | Stress: 0.50x
+2025-09-07 03:05:39,077 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:05:39,178 [ERROR] hardcore_wizard: 💥 extreme_shell_scripting FAILED: Extreme Shell Scripting failed under hardcore conditions
+2025-09-07 03:05:39,480 [INFO] hardcore_wizard: 🔥 Cycle 53 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 15611
+2025-09-07 03:06:44,324 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 54 | Stress: 0.50x
+2025-09-07 03:06:44,324 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:06:44,425 [ERROR] hardcore_wizard: 💥 extreme_shell_scripting FAILED: Extreme Shell Scripting failed under hardcore conditions
+2025-09-07 03:06:44,728 [INFO] hardcore_wizard: 🔥 Cycle 54 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 15883
+2025-09-07 03:07:35,268 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 55 | Stress: 0.50x
+2025-09-07 03:07:35,268 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:07:35,419 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Monitor 50 system processes in real-time
+2025-09-07 03:07:35,674 [INFO] hardcore_wizard: 🔥 Cycle 55 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.41s | Points: 16180
+2025-09-07 03:08:28,166 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 56 | Stress: 0.50x
+2025-09-07 03:08:28,167 [CRITICAL] hardcore_wizard: 🚨 CRISIS SCENARIO ACTIVATED: memory_leak_explosion
+2025-09-07 03:08:28,167 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:08:28,581 [INFO] hardcore_wizard: 🔥 Cycle 56 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 16472
+2025-09-07 03:08:33,200 [INFO] hardcore_wizard: ✅ Crisis scenario 'memory_leak_explosion' survived in 5.0s!
+2025-09-07 03:09:38,820 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 57 | Stress: 0.50x
+2025-09-07 03:09:38,820 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:09:39,222 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Resource exhaustion mitigation
+2025-09-07 03:09:39,232 [INFO] hardcore_wizard: 🔥 Cycle 57 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 16777
+2025-09-07 03:10:29,565 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 58 | Stress: 0.50x
+2025-09-07 03:10:29,566 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:10:29,666 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Process 250 concurrent network connections
+2025-09-07 03:10:29,767 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Database corruption under load
+2025-09-07 03:10:29,868 [ERROR] hardcore_wizard: 💥 kernel_hacking FAILED: Kernel Hacking failed under hardcore conditions
+2025-09-07 03:10:29,892 [INFO] hardcore_wizard: 🔥 Cycle 58 COMPLETE | Level: Stress Warrior | Success: 7/10 | Errors: 3 | Stress: 0.50x | Time: 0.33s | Points: 16987
+2025-09-07 03:11:35,065 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 59 | Stress: 0.50x
+2025-09-07 03:11:35,065 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:11:35,217 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Monitor 50 system processes in real-time
+2025-09-07 03:11:35,468 [INFO] hardcore_wizard: 🔥 Cycle 59 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 17284
+2025-09-07 03:12:30,817 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 60 | Stress: 0.50x
+2025-09-07 03:12:30,818 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:12:31,118 [ERROR] hardcore_wizard: 💥 kernel_hacking FAILED: Kernel Hacking failed under hardcore conditions
+2025-09-07 03:12:31,169 [ERROR] hardcore_wizard: 💥 distributed_systems FAILED: Distributed Systems failed under hardcore conditions
+2025-09-07 03:12:31,220 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Resource exhaustion mitigation
+2025-09-07 03:12:31,221 [INFO] hardcore_wizard: 🔥 Cycle 60 COMPLETE | Level: Stress Warrior | Success: 7/10 | Errors: 3 | Stress: 0.50x | Time: 0.40s | Points: 17529
+2025-09-07 03:13:39,628 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 61 | Stress: 0.50x
+2025-09-07 03:13:39,628 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:13:40,030 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Resource exhaustion mitigation
+2025-09-07 03:13:40,030 [INFO] hardcore_wizard: 🔥 Cycle 61 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 17814
+2025-09-07 03:14:50,764 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 62 | Stress: 0.50x
+2025-09-07 03:14:50,764 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:14:51,166 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Resource exhaustion mitigation
+2025-09-07 03:14:51,167 [INFO] hardcore_wizard: 🔥 Cycle 62 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 18099
+2025-09-07 03:16:02,298 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 63 | Stress: 0.50x
+2025-09-07 03:16:02,298 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:16:02,399 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Mass service failure recovery
+2025-09-07 03:16:02,625 [INFO] hardcore_wizard: 🔥 Cycle 63 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.33s | Points: 18384
+2025-09-07 03:16:52,397 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 64 | Stress: 0.50x
+2025-09-07 03:16:52,397 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:16:52,448 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 500 log files simultaneously
+2025-09-07 03:16:52,803 [INFO] hardcore_wizard: 🔥 Cycle 64 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.41s | Points: 18621
+2025-09-07 03:18:04,456 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 65 | Stress: 0.50x
+2025-09-07 03:18:04,456 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:18:04,507 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 500 log files simultaneously
+2025-09-07 03:18:04,557 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Mass service failure recovery
+2025-09-07 03:18:04,607 [ERROR] hardcore_wizard: 💥 chaos_troubleshooting FAILED: Chaos Troubleshooting failed under hardcore conditions
+2025-09-07 03:18:04,783 [INFO] hardcore_wizard: 🔥 Cycle 65 COMPLETE | Level: Stress Warrior | Success: 7/10 | Errors: 3 | Stress: 0.50x | Time: 0.33s | Points: 18861
+2025-09-07 03:19:10,257 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 66 | Stress: 0.50x
+2025-09-07 03:19:10,257 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:19:10,659 [INFO] hardcore_wizard: 🔥 Cycle 66 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 19183
+2025-09-07 03:20:13,491 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 67 | Stress: 0.50x
+2025-09-07 03:20:13,491 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:20:13,692 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Database corruption under load
+2025-09-07 03:20:13,843 [INFO] hardcore_wizard: 🔥 Cycle 67 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.35s | Points: 19438
+2025-09-07 03:21:03,741 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 68 | Stress: 0.50x
+2025-09-07 03:21:03,741 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:21:04,146 [INFO] hardcore_wizard: 🔥 Cycle 68 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.41s | Points: 19730
+2025-09-07 03:22:10,400 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 69 | Stress: 0.50x
+2025-09-07 03:22:10,400 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:22:10,501 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Process 250 concurrent network connections
+2025-09-07 03:22:10,813 [INFO] hardcore_wizard: 🔥 Cycle 69 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 20027
+2025-09-07 03:23:01,596 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 70 | Stress: 0.50x
+2025-09-07 03:23:01,596 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:23:01,647 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 500 log files simultaneously
+2025-09-07 03:23:01,697 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Mass service failure recovery
+2025-09-07 03:23:01,737 [ERROR] hardcore_wizard: 💥 container_chaos FAILED: Container Chaos failed under hardcore conditions
+2025-09-07 03:23:01,924 [INFO] hardcore_wizard: 🔥 Cycle 70 COMPLETE | Level: Stress Warrior | Success: 7/10 | Errors: 3 | Stress: 0.50x | Time: 0.33s | Points: 20237
+2025-09-07 03:23:56,370 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 71 | Stress: 0.50x
+2025-09-07 03:23:56,370 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:23:56,421 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 500 log files simultaneously
+2025-09-07 03:23:56,470 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Mass service failure recovery
+2025-09-07 03:23:56,545 [ERROR] hardcore_wizard: 💥 network_warfare FAILED: Network Warfare failed under hardcore conditions
+2025-09-07 03:23:56,697 [INFO] hardcore_wizard: 🔥 Cycle 71 COMPLETE | Level: Stress Warrior | Success: 7/10 | Errors: 3 | Stress: 0.50x | Time: 0.33s | Points: 20477
+2025-09-07 03:24:50,083 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 72 | Stress: 0.50x
+2025-09-07 03:24:50,084 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:24:50,184 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Process 250 concurrent network connections
+2025-09-07 03:24:50,486 [INFO] hardcore_wizard: 🔥 Cycle 72 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 20744
+2025-09-07 03:25:54,731 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 73 | Stress: 0.50x
+2025-09-07 03:25:54,731 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:25:54,781 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Find and analyze 500 log files simultaneously
+2025-09-07 03:25:54,881 [ERROR] hardcore_wizard: 💥 chaos_troubleshooting FAILED: Chaos Troubleshooting failed under hardcore conditions
+2025-09-07 03:25:55,133 [INFO] hardcore_wizard: 🔥 Cycle 73 COMPLETE | Level: Stress Warrior | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.40s | Points: 20991
+2025-09-07 03:26:44,548 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 74 | Stress: 0.50x
+2025-09-07 03:26:44,549 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:26:44,649 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Mass service failure recovery
+2025-09-07 03:26:44,700 [ERROR] hardcore_wizard: 💥 chaos_troubleshooting FAILED: Chaos Troubleshooting failed under hardcore conditions
+2025-09-07 03:26:44,876 [INFO] hardcore_wizard: 🔥 Cycle 74 COMPLETE | Level: Stress Warrior | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.33s | Points: 21256
+2025-09-07 03:27:38,484 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 75 | Stress: 0.50x
+2025-09-07 03:27:38,485 [CRITICAL] hardcore_wizard: 🚨 CRISIS SCENARIO ACTIVATED: server_meltdown
+2025-09-07 03:27:38,485 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:27:38,631 [ERROR] hardcore_wizard: 💥 security_war_games FAILED: Security War Games failed under hardcore conditions
+2025-09-07 03:27:39,148 [INFO] hardcore_wizard: 🔥 Cycle 75 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.44s | Points: 21558
+2025-09-07 03:27:43,502 [INFO] hardcore_wizard: ✅ Crisis scenario 'server_meltdown' survived in 5.0s!
+2025-09-07 03:28:34,876 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 76 | Stress: 0.50x
+2025-09-07 03:28:34,876 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:28:34,977 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Process 250 concurrent network connections
+2025-09-07 03:28:35,278 [INFO] hardcore_wizard: 🔥 Cycle 76 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 21905
+2025-09-07 03:29:24,197 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 77 | Stress: 0.50x
+2025-09-07 03:29:24,197 [CRITICAL] hardcore_wizard: 🚨 CRISIS SCENARIO ACTIVATED: memory_leak_explosion
+2025-09-07 03:29:24,197 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:29:24,299 [ERROR] hardcore_wizard: 💥 extreme_command_mastery FAILED: Command mastery failed under stress: Process 250 concurrent network connections
+2025-09-07 03:29:24,400 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Database corruption under load
+2025-09-07 03:29:24,526 [INFO] hardcore_wizard: 🔥 Cycle 77 COMPLETE | Level: Stress Warrior | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.33s | Points: 22165
+2025-09-07 03:29:29,232 [INFO] hardcore_wizard: ✅ Crisis scenario 'memory_leak_explosion' survived in 5.0s!
+2025-09-07 03:30:35,519 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 78 | Stress: 0.50x
+2025-09-07 03:30:35,520 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:30:35,871 [ERROR] hardcore_wizard: 💥 distributed_systems FAILED: Distributed Systems failed under hardcore conditions
+2025-09-07 03:30:35,922 [INFO] hardcore_wizard: 🔥 Cycle 78 COMPLETE | Level: Stress Warrior | Success: 9/10 | Errors: 1 | Stress: 0.50x | Time: 0.40s | Points: 22457
+2025-09-07 03:31:26,771 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 79 | Stress: 0.50x
+2025-09-07 03:31:26,771 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:31:27,174 [INFO] hardcore_wizard: 🔥 Cycle 79 COMPLETE | Level: Stress Warrior | Success: 10/10 | Errors: 0 | Stress: 0.50x | Time: 0.40s | Points: 22749
+2025-09-07 03:32:18,840 [INFO] hardcore_wizard: 🔥 HARDCORE Cycle 80 | Stress: 0.50x
+2025-09-07 03:32:18,841 [WARNING] hardcore_wizard: ⚡ Difficulty reduced. Stress level: 0.50
+2025-09-07 03:32:18,982 [ERROR] hardcore_wizard: 💥 container_chaos FAILED: Container Chaos failed under hardcore conditions
+2025-09-07 03:32:19,144 [ERROR] hardcore_wizard: 💥 crisis_sysadmin FAILED: Crisis management failed: Security breach containment
+2025-09-07 03:32:19,193 [INFO] hardcore_wizard: 🔥 Cycle 80 COMPLETE | Level: Stress Warrior | Success: 8/10 | Errors: 2 | Stress: 0.50x | Time: 0.35s | Points: 23014
+2025-09-07 03:33:09,928 [ERROR] hardcore_wizard: 💥 Max errors reached: 101
+2025-09-07 03:33:09,928 [INFO] hardcore_wizard: 🎉 HARDCORE TRAINING COMPLETED!
+2025-09-07 03:33:09,928 [INFO] hardcore_wizard: Duration: 1:16:59.054819
+2025-09-07 03:33:09,928 [INFO] hardcore_wizard: Cycles: 80
+2025-09-07 03:33:09,928 [INFO] hardcore_wizard: Final Level: Stress Warrior
+2025-09-07 03:33:09,928 [INFO] hardcore_wizard: Hardcore Points: 23014
+2025-09-07 03:33:09,928 [INFO] hardcore_wizard: Stress Tests Passed: 80
+2025-09-07 03:33:09,928 [INFO] hardcore_wizard: Crisis Scenarios Survived: 4
+2025-09-07 03:33:09,928 [INFO] hardcore_wizard: Total Errors: 101

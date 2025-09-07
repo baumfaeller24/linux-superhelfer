@@ -1,0 +1,88 @@
+{
+  "cycle": 8,
+  "timestamp": "2025-09-07T02:21:13.230945",
+  "stress_level": 0.5,
+  "crisis_active": false,
+  "cycle_time": 0.4019608497619629,
+  "results": [
+    [
+      "extreme_shell_scripting",
+      "ok",
+      "Extreme Shell Scripting: Hardcore level 0.5x",
+      0.10064959526062012
+    ],
+    [
+      "extreme_command_mastery",
+      "error",
+      "Command mastery failed under stress: Process 250 concurrent network connections",
+      0
+    ],
+    [
+      "security_war_games",
+      "ok",
+      "Security War Games: Hardcore level 0.5x",
+      0.1260080337524414
+    ],
+    [
+      "container_chaos",
+      "ok",
+      "Container Chaos: Hardcore level 0.5x",
+      0.1411123275756836
+    ],
+    [
+      "chaos_troubleshooting",
+      "ok",
+      "Chaos Troubleshooting: Hardcore level 0.5x",
+      0.15122032165527344
+    ],
+    [
+      "performance_under_pressure",
+      "ok",
+      "Performance Under Pressure: 4/4 tasks completed",
+      0.1512751579284668
+    ],
+    [
+      "network_warfare",
+      "ok",
+      "Network Warfare: Hardcore level 0.5x",
+      0.17568516731262207
+    ],
+    [
+      "kernel_hacking",
+      "ok",
+      "Kernel Hacking: Hardcore level 0.5x",
+      0.20025420188903809
+    ],
+    [
+      "distributed_systems",
+      "ok",
+      "Distributed Systems: Hardcore level 0.5x",
+      0.2254316806793213
+    ],
+    [
+      "crisis_sysadmin",
+      "error",
+      "Crisis management failed: Resource exhaustion mitigation",
+      0
+    ]
+  ],
+  "expertise_level": "Hardcore Beginner",
+  "performance_metrics": {
+    "successful_modules": 8,
+    "total_modules": 10,
+    "success_rate": 0.8,
+    "average_duration": 0.12716364860534668
+  },
+  "stats": {
+    "cycles_completed": 8,
+    "knowledge_gained": 72,
+    "patterns_learned": 186,
+    "expertise_level": "Hardcore Beginner",
+    "stress_tests_passed": 8,
+    "crisis_scenarios_survived": 0,
+    "performance_score": 1326,
+    "hardcore_points": 3308,
+    "started_at": "2025-09-07T02:16:10.873400",
+    "version": "hardcore_v2.0"
+  }
+}
